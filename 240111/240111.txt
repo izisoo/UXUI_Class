@@ -182,7 +182,21 @@ git config --list
 > git init        ***이건 한번만 하기 아니면 리셋됨
 
 
+5. 나의 git과 나의 레파지토리 주소를 연동하는 방법
+> git remote add origin https://github.com/izisoo/UXUI_Class.git
 
+6. 지금까지 내가 작업해온 데이터를 git 담는 방법
+> git add .
+
+7. 내 루트 폴더에 있는 데이터가 정상적으로 담겨있는지 확인하는 방법
+> git status
+
+8. git hub에 업로드하고자 하는 나의 데이터에 라벨을 붙이는 작업
+(*커밋 메세지를 작성)
+> git commit -m "240111"
+
+9. 웹 상에 있는 나의 git hub 레파지토리로 데이터를 커밋하는 방법
+> git push origin master
 
 
 

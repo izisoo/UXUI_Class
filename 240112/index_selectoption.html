@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://localhost:3000/process_login" method="post">
+      <select name="selected" id="select01">
+        <option value="kimbab">김밥</option>
+        <option value="ramen">라면</option>
+        <option value="dduck">떡볶이</option>
+        <option value="soondae">순대</option>
+      </select>
+      <select name="selected01" id="select02">
+        <optgroup label="메뉴">
+          <option value="0">선택하세요</option>
+          <option value="1">빅맥세트</option>
+          <option value="2">더블버거세트</option>
+          <option value="3">치즈버거세트</option>
+        </optgroup>
+        <optgroup label="음료">
+          <option value="0">선택하세요</option>
+          <option value="1">콜라</option>
+          <option value="2">제로콜라</option>
+          <option value="3">사이다</option>
+        </optgroup>
+      </select>
+      <textarea name="review" id="review01" cols="30" rows="10"></textarea>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+fieldset {
+  width: 280px;
+  margin-bottom: 10px;
+}
+legend {
+  text-align: left;
+  font-weight: 1000;
+
+}
+div {
+  text-align: center;
+}
+label {
+  color: rgb(4, 134, 167);
+  font-weight: bold
+  
+}
+#testbox {
+  width: 300px;
+}
+input {
+  text-align: center;
+}
+
