@@ -1,0 +1,35 @@
+header {
+  background: #f00;
+  color: #fff;
+  width: 800px;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+section {
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#aside {
+  width: 200px;
+  background: #00f;
+  color: #fff;
+  float: left;
+  text-align: center;
+}
+#content {
+  width: 400px;
+  background: #0f0;
+  float: right;
+  text-align: center;
+}
+footer {
+  background: rgb(200, 255, 0);
+  width: 800px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 auto;
+  text-align: center;
+}

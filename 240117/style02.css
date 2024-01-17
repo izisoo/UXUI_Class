@@ -1,0 +1,39 @@
+@import url("./resetcss.css");
+
+/*header*/
+header {
+  background: #f00;
+  width: 960px;
+  height: 100px;
+  margin: 10px auto 0px;
+  position: relative;
+}
+header > h1 {
+  text-align: center;
+  line-height: 100px;
+}
+header > button {
+  background: #fff;
+  border: 0px;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+/* content */
+content {
+  background: #f00;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+content > h1 {
+  text-align: center;
+  margin-top: 20px;
+}
