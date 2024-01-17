@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Nexonv1";
+  src: url("./넥슨\ 카트\ 고딕\ OTF\ Bold.otf");
+}
+body {
+  font-family: Nexonv1;
+}
+.a {
+  font-size: 32px;
+  font-style: italic;
+}
+.d {
+  font-weight: bold;
+}

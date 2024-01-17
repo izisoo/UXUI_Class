@@ -1,0 +1,150 @@
+*mac 유저 : 그림판 -> 이미지 맵 / 좌표!!
+*google : image map generator
+
+html 태그
+
+1) input 태그
+(*input, nav, toggle)
+(*회원가입 / 로그인 -> input)
+
+- form : table (*input 태그를 사용할때 바깥에 커버 ex_table w.tr,td)
+- input : 속성 화면이 달라짐
+[text / password / file / submit / checkbox / radio / search] (range,week,time,month,email)
+
+- textarea : 리뷰 및 댓글창 등을 생성하고자 할 때
+- select / option = ul / li : 어떤 옵션을 선택하도록 하고자 할 때 사용할 수 있는 태그
+optgroup / option -> 선택지를 그룹핑
+
+- fieldset / legend = form 태그를 스타일링하는 역할
+
+- label(w.input) = 인풋태그랑 같이 써서 사용사가 더 편리할 수 있도록 하는 라벨링하는 역할
+
+
+1. 아이디 & 패스워드 입력 후 로그인 버튼 클릭
+2. 입력된 정보를 찾아 매칭되어야 로그인이 된다.
+3. 사용자가 입력한 정보는 서버에서 가져올 수 있어야합니다.
+
+**CS (*computer science = 컴퓨터 공학)
+*?=query=물어보다 질문하다
+
+form>fieldset>legend{학사정보 조회서비스}+
+
+form>(fieldset>legend{학사정보 조회서비스}+div>(p>label+input)*3)+input:submit
+
+
+HTML : Hyper Text Markup Language
+-> 사람의 뼈 / 건물 구조
+
+CSS : Cascading Style Sheet
+(*부모요소에 적용한 스타일요소 -> 자식요소에 해당 스타일 상속 받음)
+
+스타일 적용하는 방법
+1) 인라인 스타일 (0.1%)
+2) 내부 스타일 (-)
+3) 외부 스타일 (99.9%)
+
+> 코드를 작성할 때, 1개의 단일 파일안에 가급적 최소한의 정보를 담으려고하는 노력!*_*
+
+>버그(bug) -> 내가 작성하거나 만든 프로젝트 코드 및 프로그래밍 언어 의도치 않은 문제발생
+> 디버깅 (debuging) -> 버그를 찾아서 해결하는 행위
+
+> if, 한 개의 단일 파일이 각 기능에 따라서 분할되어 있었더라면 체크 가능
+
+> 트러블슈팅(trouble shooting) -> 버그 뿐만 아니라, 현재 작동되고 있는 서비스에서 보다 효율적으로 무언가를 개선하는 행위
+
+>트러블슈팅을 전문으로 하는 사람을 트러블슈터라고함 = trouble shooter
+(*공고 : 트러블슈팅 경험이 많은 사람)
+(*면접 : 국비 수업 > 팀플 > 트러블슈팅 경험)
+
+상대경로 : 현재 내가 작업중인 폴더를 기준으로 경로를 찾아오는 것
+/ 절대경로 : 내가 작업중인 폴더가 아니라 루트폴더(root folder)를 기준으로 경로를 찾아오는 것
+
+*HTML tag를 작성하는데 있어서 모든 태그가 똑같이 작동하지 않는다.
+
+> html 태그는 크게 두가지 부류로 나눠서 생각해 볼 수 있음 (공식적으로)
+1) block tag
+- 현재 위치한 영역의 한 줄(*가로 = 행)을 전체 사용하는 태그
+ex. h(n), div, fieldset, form, hr, p, ul, ol, li
+
+2) inline tag
+- 현재 해당 태그가 위치한 그 영역의 한 줄을 다른 인라인 태그들과 공유해서 사용한다.
+ex. img, a, br, button, label, span, input
+
+** id / class
+id -> 딱 하나만 
+class -> 복수 선택
+
+****block&inline 뿌엑*********
+
+html5 문법 :
+-의미를 부여한 div태그를 만들어준다면 어떨까? -> semantic tag
+
+
+*******font family==
+
+
+버튼안에 입력되어있는 텍스트 -> 컨텐츠
+이 컨텐츠를 감싸안고 있는 테두리 -> 보더(border)
+컨텐츠와 보더 사이 간격 -> 패딩(padding)
+
+
+*CSS : 스타일 적용하는데 있어서 공통적인 형태!!
+-html에서 스타일을 적용하고자 하는 특정 요소를 선택 및 불러와서 해당 요소에 스타일을 정의
+-html에서 찾아서 불러온 태그 = 선택자 (*selector)
+-css에서는 선택자에게 어떤 스타일을 부여하고자 한다면, 반드시 중괄호를 입력한다 
+*선택자{ 스타일 속성명 : 속성값 }
+
+*h1 = 32px;
+*html에서 기본적으로 텍스트를 작성했을 때, 폰트사이즈 
+
+*포트폴리오 홈페이지 작업!!
+> 마진x 패딩x / 레이아웃!
+> HTML이 기본적으로 주는 마진 존재 / h태그를 포함한 거의 대부분의 태그 본연의 마진/패딩
+
+
+CSS를 학습할 때 가장 중요한 요소!!
+> 선택자 종류 다양
+
+1) 전체 선택자 :
+- */ css 스타일을 적용하기에 앞서서 reset 하고자 할 때
+
+2) 태그 선택자 :
+- html에서 작성한 태그를 직접 불러와서 스타일 적용하고자 할 때
+
+3) 아이디 선택자 :
+- html에서 id 속성값을 사용하고 있는 태그를 선택해서 불러오고자 할 때 -> 반드시 #아이디속성값
+- 유일한 값을 보유하고있는 요소에 스타일을 적용하고자 할 때
+(*주의사항 : 동일한 아이디 속성값이 존재해서는 안된다)
+
+4) 클래스 선택자 :
+- html에서 class 속성값을 사용하고 있는 태그를 불러오고자 할 때 -> 반드시 '.클래스속성값'
+
+5) 후손 선택자 :
+6) 자손 선택자 :
+7) 속성 선택자 :
+8) 동위 선택자 :
+9) 구조 선택자 :
+10) 반응 선택자 :
+11) 상태 선택자 :
+12) 링크 선택자 :
+13) 문자 선택자 :
+14) 부정 선택자 :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.google.com/search?q=nike
+&oq=nike
+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGDwyBggDEEUYPDIGCAQQRRg80gEJMTU2OGowajE1qAIAsAIA&sourceid=chrome
+&ie=UTF-8

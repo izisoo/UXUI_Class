@@ -1,0 +1,8 @@
+div {
+  width: 500px;
+  text-align: center;
+  height: 100px;
+  margin: 0 auto;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d2ff52+0,91e842+100;Neon */
+background: radial-gradient(ellipse at center,  #d2ff52 0%,#91e842 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
