@@ -1,0 +1,114 @@
+/* reset css */
+@import url("./resetcss\ copy.css");
+
+/* header */
+
+#main_header {
+  width: 100%;
+  height: 140px;
+  background: #2CC1BD;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+}
+#my_adress > select {
+  width: 90px;
+  height: 40px;
+  margin: 20px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #fff;
+  background: #2CC1BD;
+  border: none;
+}
+#my_adress > select > option {
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  padding: 5px;
+  display: block;
+}
+#search_bar > input {
+  width: 360px;
+  height: 50px;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+  position: absolute;
+  top: 70px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+#search_bar > input:nth-of-type(4)::before {
+  background: url("");
+}
+#buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+}
+#buttons > input {
+  background: #fff;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 7px 10px 10px 5px;
+}
+
+/* section */
+#tag {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+  position: relative;
+  height: 50px;
+}
+.tag_content {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #2CC1BD;
+  border-radius: 30px;
+  font-size: 14px;
+  box-shadow: 0px 0px 10px 0px #e2e2e2;
+}
+.tag_content > #tagging {
+  font-weight: bold;
+  color: #2CC1BD;
+  margin-right: 5px;
+}
+
+#imgscr {
+  display: block
+  overflow: hidden;
+  position: relative;
+  height: 350px;
+  border: 1px solid red;
+}
+.bm1 > img {
+  width: 170px;
+  margin-left: 18px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 #e2e2e2;
+}
+.drive > img {
+  width: 170px;
+  margin-left: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 #e2e2e2;
+}
+.togo > img {
+  width: 400px;
+  position: absolute;
+
+}
+.store > img {
+  width: 350px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px 0 #e2e2e2;
+}
