@@ -1,0 +1,31 @@
+https://fontawesome.com/
+flaticon
+
+*mobile simulator
+
+css sprite generator
+
+display [block <-> none]
+
+안쪽 여백 : padding
+바깥쪽 여백 : margin
+
+spacearound : 좌우측 공간에 일정한 여백을 두고 일정하게 정렬
+
+*전후문자 선택자
+
+? css에서 >이거를 붙일때 안붙일때 차이 >a , a
+> : 직계후손을 뜻한다 후손..자손..웅.. 암턴 바로밑에 없으면 안써도댐
+
+
+? h1 과 article를 각자 언제 써야하는지 - 시멘틱 태그
+
+**inline 태그 : 
+- width / height 속성 적용o
+- margin & padding 상.하.좌.우 적용만 가능
+
+> a 태그 block
+
+
+
+
