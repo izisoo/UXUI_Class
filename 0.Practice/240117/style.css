@@ -1,0 +1,149 @@
+/* reset css */
+@import url("./resetcss.css");
+
+/* font css */
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+/* header */
+header {
+  width: 960px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+#title {
+  /* background: red; */
+  font-family: "Coiny", system-ui;
+  padding: 20px;
+  position: absolute;
+}
+
+/* nav_gnb */
+#nav_gnb {
+position: absolute;
+right: 0px;
+top: 5px;
+overflow: hidden;
+}
+#nav_gnb > ul > li {
+float: left;
+}
+#nav_gnb > ul > li > a {
+  display: block;
+  border: 1px solid #000;
+  padding: 3px 10px;
+  border-right: none;
+}
+#nav_gnb > ul > li:nth-child(1) > a {
+  border-radius: 10px 0 0 10px;
+}
+#nav_gnb > ul > li:nth-child(5) > a {
+  border-radius: 0px 10px 10px 0px;
+  border-right: 1px solid #000;
+}
+
+/* nav_lnb */
+#nav_lnb {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  overflow: hidden;
+}
+#nav_lnb > ul > li {
+  float: left;
+}
+#nav_lnb > ul > li > a {
+  display: block;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-right: none;
+}
+#nav_lnb > ul > li:nth-child(1) > a {
+  border-radius: 10px 0 0 10px;
+}
+#nav_lnb > ul > li:nth-child(5) > a {
+  border-radius: 0 10px 10px 0;
+  border-right: 1px solid #000;
+}
+
+/* section */
+#content {
+  width: 960px;
+  position: relative;
+  overflow: hidden;
+}
+#content > #section {
+width: 650px;
+float: left;
+}
+#section > .main_article {
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+/* aside */
+aside {
+  width: 200px;
+  float: right;
+}
+asdie input:nth-of-type(1) {
+  display: none;
+}
+aside input:nth-of-type(1)~div:nth-of-type(1) {
+  display: none;
+}
+aside input:nth-of-type(1):checked ~ div:nth-of-type(1) {
+  display: block;
+}
+asdie input:nth-of-type(2) {
+  display: none;
+}
+aside input:nth-of-type(2)~div:nth-of-type(2) {
+  display: none;
+}
+aside input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+  display: block;
+}
+.buttons {
+overflow: hidden;
+}
+.buttons > label {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+}
+aside input:nth-of-type(1):checked ~ .buttons > label:nth-of-type(1) {
+  background: #fff;
+  color: #000;
+}
+aside input:nth-of-type(2):checked ~ .buttons > label:nth-of-type(2) {
+  background: #fff;
+  color: #000;
+}
+.item {
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #000;
+  border-top: none;
+}
+.item .thumbnail {
+  float: left;
+}
+.description {
+  float: left;
+  margin-left: 10px;
+}
+.description > strong {
+  width: 120px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
