@@ -1,0 +1,262 @@
+@import url("./resetcss.css");
+@import url("./font.css");
+
+/* common */
+#wrap {
+  width: 100%;
+}
+
+/*header*/
+#header {
+  height: 76px;
+  margin: 0 auto;
+  background: #ffffff;
+  z-index: 1;
+}
+#header-main {
+  max-width: 1280px;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+#header img {
+  width: 105px;
+  display: block;
+}
+#right-gnb {
+  display: flex;
+  font-family: Travel;
+  gap: 16px;
+}
+#right-gnb span {
+  padding: 8px
+}
+#menu-my {
+  display: flex;
+  align-items: center;
+  border: 1px solid #9f9f9f;
+  border-radius: 30px;
+  padding: 0 10px;
+}
+#menu-my span {
+  font-size: 18px;
+}
+#menu-my span:first-child {
+  margin-right: -8px;
+}
+#menu-my span:last-child {
+  font-size: 20px;
+  color: #9f9f9f;
+}
+
+/* figure */
+figure {
+  width: 100%;
+  height: 528px;
+  background: url("./img/1.main/main_04.jpg") center/cover no-repeat;
+  position: relative;
+}
+#main_figure {
+  padding: 0px 40px 64px 40px;
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-end;
+}
+#main_figure h2 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+#main_figure-content {
+  background: #fff;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 30px;
+}
+#main-select {
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+#main-select span:first-child {
+  color: #1f44b2;
+}
+#main-select span:first-child::after {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background: #1f44b2;
+  width: 15px;
+  height: 4px;
+  padding: 10px;
+}
+#main-select span:last-child {
+  color: #9f9f9f;
+}
+#option form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-between;
+}
+#dosearch {
+  min-width: 51%;
+  height: 48px;
+  background: #efefef;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+#dosearch i {
+  color: #9f9f9f;
+  font-size: 18px;
+  padding-left: 20px;
+}
+#dosearch input {
+  border: none;
+  width: 100%;
+  background: transparent;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+#date {
+  min-width: 20%;
+  border: none;
+  border-radius: 5px;
+  background: #efefef;
+  padding: 0 10px;
+}
+#date input[type="date"] {
+  margin: 0 10px;
+  width: 296px;
+  position: relative;
+}
+#date input[type="date"]::before {
+  content: attr(placeholder);
+  width: 100%;
+  padding-left: 20px;
+}
+#people {
+  min-width: 15%;
+  border: none;
+  border-radius: 5px;
+  background: #efefef;
+  padding: 0 10px;
+}
+#option button {
+  min-width: 10%;
+  border: none;
+  background: #3c6dff;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* section */
+section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#main-section {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+}
+.content-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.content-top h5 {
+  color: #3c6dff;
+  font-weight: 600;
+}
+.travel-img {
+  width: 100%;
+  display: flex;
+}
+.travel-img img {
+  width: 95%;
+  padding: 0 px;
+  border-radius: 10px;
+  margin: auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* event */
+#event {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#event-img {
+  display: flex;
+}
+#event-img img {
+  display: flex;
+  width: 97%;
+  border-radius: 10px;
+  margin: auto;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#event-page {
+  text-align: center;
+  margin: 8px;
+}
+#event-page span {
+  width: 8px;
+  height: 8px;
+  background: #9f9f9f;
+}
+
+/* korea */
+#korea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* travel */
+
+
+/* popular */
+
+
+/* today */
+
+
+/* hot */
+
+
+/* pick */
+
+
+/* bottom */
+

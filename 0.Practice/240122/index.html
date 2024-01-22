@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/fc788482a6.js" crossorigin="anonymous"></script>
+  <title>여기어때</title>
+</head>
+<body>
+  <div id="wrap">
+    <!-- header -->
+    <header>
+      <div id="header">
+        <div id="header-main">
+          <a href="#">
+            <img src="./img/logo.png" alt="logo">
+          </a>
+          <div id="right-gnb">
+            <span>이벤트</span>
+            <span>고객센터</span>
+            <div id="menu-my">
+              <span>
+                <i class="fa-solid fa-bars"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-circle-user"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- figure -->
+    <figure>
+      <div id="main_figure">
+        <h2>국내부터 해외까지<br />여행할때 여기어때</h2>
+        <div id="main_figure-content">
+          <div id="main-select">
+            <span>국내 숙소</span>
+            <span>해외 숙소</span>
+          </div>
+          <div id="option">
+            <form action="https://localhost:3000" method="post">
+              <div id="dosearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" value="" placeholder="여행지나 숙소를 검색해보세요">
+              </div>
+              <input type="date" id="date" placeholder="01.22 월 - 01.26 금 (4박)">
+              <select name="people" id="people">
+                <option value="2">인원 2</option>
+                <option value="3">인원 3</option>
+                <option value="4">인원 4</option>
+                <option value="5">인원 5</option>
+                <option value="6">인원 6</option>
+              </select>
+              <button>검색</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </figure>
+
+    <!-- section -->
+    <section>
+      <div id="main-section">
+        <!-- event -->
+        <div id="event">
+          <div class="content-top">
+            <h3>이벤트</h3>
+            <h5>더보기</h5>
+          </div>
+          <div id="event-img">
+            <a href="#">
+              <img src="./img/2.event/event_01.jpg" alt="event_01">
+            </a>
+            <a href="#">
+              <img src="./img/2.event/event_02.jpg" alt="event_02">
+            </a>
+            <a href="#">
+              <img src="./img/2.event/event_03.jpg" alt="event_03">
+            </a>
+          </div>
+          <div id="event-page">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+  
+        <!-- korea -->
+        <div id="korea">
+          <div class="content-top">
+            <h3>국내 인기 여행지</h3>
+            <h5>더보기</h5>
+          </div>
+          <div class="travel-img">
+            <a href="#">
+              <img src="./img/3.korean/korean_01.jpg" alt="korean_01">
+            </a>
+            <a href="#">
+              <img src="./img/3.korean/korean_02.jpg" alt="korean_02">
+            </a>
+            <a href="#">
+              <img src="./img/3.korean/korean_03.jpg" alt="korean_03">
+            </a>
+            <a href="#">
+              <img src="./img/3.korean/korean_04.jpg" alt="korean_04">
+            </a>
+            <a href="#">
+              <img src="./img/3.korean/korean_05.jpg" alt="korean_05">
+            </a>
+            <a href="#">
+              <img src="./img/3.korean/korean_06.jpg" alt="korean_06">
+            </a>
+        </div>
+        <!-- travel -->
+        <div id="travel"></div>
+  
+        <!-- popular -->
+        <div id="popular"></div>
+  
+        <!-- today -->
+        <div id="today"></div>
+  
+        <!-- hot -->
+        <div id="hot"></div>
+  
+        <!-- pick -->
+        <div id="pick"></div>
+  
+        <!-- bottom-->
+      </div>
+      <div id="bottom"></div>
+    </section>
+  </div>
+</body>
+</html>
