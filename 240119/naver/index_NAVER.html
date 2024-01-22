@@ -3,272 +3,314 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom css -->
     <link rel="stylesheet" href="./style_NAVER.css" />
     <script
       src="https://kit.fontawesome.com/fc788482a6.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+
     <title>NAVER</title>
   </head>
   <body>
-    <!-- header -->
     <div id="wrap">
+      <!-- header -->
       <header>
-        <span id="header_gnb">
-          <button id="topasidebton_left">
-            <span id="all_menu" class="blind">btn_menu</span>
-          </button>
-          <button id="topasidebton_left">
-            <span id="naver_pay" class="blind">naverpay</span>
-          </button>
-          <button id="topasidebton_right">
-            <span id="naver_talk" class="blind">navertalk</span>
-          </button><button id="topasidebton_right">
-            <span id="naver_notify" class="blind">navernotify</span>
-          </button>
-        </span>
-        <span id="search_bar">
-          <span id="naver_logo" class="blind">logo</span>
-          <input type="text" id="textbox" placeholder="검색어를 입력해주세요">
-            <!-- <label for="textbox"></label> -->
-          </input>
-          <span class="searchbar_buttons blind">
-            <button>
-          </button>입력도구</span>
-          <span class="searchbar_buttons blind">
-            <button>
-          </button>하단화살표</span>
-          <span class="searchbar_buttons blind">
-            <button>
-          </button>검색</span>
-        </div>
-        <span>
-          <ul id="header_lnb">
-            <a href="#">
-              <i class="fa-solid fa-envelope-open"></i>
-              <p>메일</p>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-mug-saucer"></i>
-              <p>카페</p>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-blogger"></i>
-              <p>블로그</p>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-bag-shopping"></i>
-              <p>쇼핑</p>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-newspaper"></i>
-              <p>뉴스</p>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-chart-line"></i>
-              <p>증권</p>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-house"></i>
-              <p>부동산</p>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-map-location-dot"></i>
-              <p>지도</p>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-border-all"></i>
-              <p>웹툰</p>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-bolt-lightning"></i>
-              <p>지지직</p>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-rocketchat"></i>
-              <p></p>
-            </a>
-          </ul>
+        <div id="header">
+          <span id="header_gnb">
+            <span id="head_left">
+              <button id="topasidebton_left">
+                <span id="all_menu" class="blind">btn_menu</span>
+              </button>
+              <button id="topasidebton_left">
+                <span id="naver_pay" class="blind">naverpay</span>
+              </button>
+            </span>
+            <span id="head_right">
+              <button id="topasidebton_right">
+                <span id="naver_talk" class="blind">navertalk</span>
+              </button><button id="topasidebton_right">
+                <span id="naver_notify" class="blind">navernotify</span>
+              </button>
+            </span>
           </span>
+          <span id="search_bar">
+            <span id="naver_logo" class="blind">logo</span>
+            <input type="text" id="textbox" 
+            placeholder="검색어를 입력해주세요"></input>
+            <span class="searchbar_buttons blind">
+              <button>
+            </button>입력도구</span>
+            <span class="searchbar_buttons blind">
+              <button>
+            </button>하단화살표</span>
+            <span class="searchbar_buttons blind">
+              <button>
+            </button>검색</span>
+          </span>
+          <span id="bottom_lnb">
+            <ul id="header_lnb">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-envelope-open"></i>
+                  <p>메일</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-mug-saucer"></i>
+                  <p>카페</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-blogger"></i>
+                  <p>블로그</p>
+                </a>
+              </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p>쇼핑</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <p>뉴스</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>증권</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <p>부동산</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <p>지도</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-border-all"></i>
+                    <p>웹툰</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <p>지지직</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-rocketchat"></i>
+                    <p></p>
+                  </a>
+                </li>
+            </ul>
+          </span>
+        </div>
       </header>
       <!-- contents -->
       <contents>
-        <div id="leftside">
-          <div id="ad">
-            <img src="./NAVER/front_ad.jpg" alt="">
+        <div id="contents">
+          <div id="leftside">
+            <div id="ad">
+              <img src="./NAVER/front_ad.jpg" alt="">
+            </div>
+            <section id="news">
+              <div id="news_top">
+                <span id="newsmenu">
+                  <a href="#">뉴스스탠드</a>
+                  <a href="#">언론사편집</a>
+                  <a href="#">엔터</a>
+                  <a href="#">스포츠</a>
+                  <a href="#">경제</a>
+                </span>
+                <a href="#">
+                  <img src="./NAVER/2023 카타르 아시안컵.png" alt="2023">
+                </a>
+              </div>
+              <div id="news_headline">
+                <div id="headline_left">
+                  <select name="전체언론사" id="전체언론사">
+                    <option value="1">전체언론사</option>
+                    <option value="1">뉴스</option>
+                    <option value="1">방송</option>
+                  </select>
+                  <a href="#">연합뉴스</a>
+                  <a href="#">주말 포근하지만 곳곳에 비,눈...</a>
+                </div>
+                <div id="headline_right">
+                  <a href="#">뉴스스탠드</a>
+                  <a href="#">뉴스홈</a>
+                </div>
+              </div>
+              <div id="news_table">
+                <table>
+                  <tr>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/미디어스.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/IT조선.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/MBC.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/OSEN.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/SBS.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/경향신문.png" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/뉴스타파.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/뉴시스.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/아시아경제.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/마이데일리.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/머니.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/서울신문.png" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/미디어스.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/사이언스타임즈.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/아이뉴스24.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/에너지경제.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/월간노동법률.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/월간중앙.png" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/조이뉴스24.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/중앙데일리.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/지디넷코리아.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/코리아헤럴드.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/투데이신문.png" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./NAVER/파이낸셜뉴스.png" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </tr>
+                </table>
+              </div>
+              <div id="news_bottom">
+                <p>언론사 더보기 3/4</p>
+              </div>
+            </section>
+            <section id="shopping"></section>
           </div>
-          <section id="news">
-            <div id="news_top">
-              <span id="newsmenu">
-                <a href="#">뉴스스탠드</a>
-                <a href="#">언론사편집</a>
-                <a href="#">엔터</a>
-                <a href="#">스포츠</a>
-                <a href="#">경제</a>
+          <div id="rightside">
+            <section id="login">
+              <span>네이버를 더 안전하고 편리하게 이용하세요</span>
+              <button id="login_button">로그인</button>
+              <span id="span_button">
+                <button>아이디 찾기</button>
+                <button>비밀번호 찾기</button>
+                <button>회원가입</button>
               </span>
-              <a href="#">
-                <img src="./NAVER/2023 카타르 아시안컵.png" alt="2023">
-              </a>
-            </div>
-            <div id="news_headline">
-              <div id="headline_left">
-                <select name="전체언론사" id="전체언론사">
-                  <option value="1">전체언론사</option>
-                  <option value="1">뉴스</option>
-                  <option value="1">방송</option>
-                </select>
-                <a href="#">연합뉴스</a>
-                <a href="#">주말 포근하지만 곳곳에 비,눈...</a>
-              </div>
-              <div id="headline_right">
-                <a href="#">뉴스스탠드</a>
-                <a href="#">뉴스홈</a>
-              </div>
-            </div>
-            <div id="news_table">
-              <table>
-                <tr>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/미디어스.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/IT조선.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/MBC.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/OSEN.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/SBS.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/경향신문.png" alt="">
-                      </a>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/뉴스타파.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/뉴시스.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/아시아경제.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/마이데일리.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/머니.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/서울신문.png" alt="">
-                      </a>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/미디어스.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/사이언스타임즈.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/아이뉴스24.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/에너지경제.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/월간노동법률.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/월간중앙.png" alt="">
-                      </a>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/조이뉴스24.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/중앙데일리.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/지디넷코리아.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/코리아헤럴드.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/투데이신문.png" alt="">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="./NAVER/파이낸셜뉴스.png" alt="">
-                      </a>
-                    </li>
-                  </ul>
-                </tr>
-              </table>
-            </div>
-            <div id="news_bottom">
-              <p>언론사 더보기 3/4</p>
-            </div>
-          </section>
-          <section id="shopping"></section>
-        </div>
-        <div id="rightside">
-          <section id="login"></section>
-          <section id="side_ad"></section>
-          <section id="weather"></section>
+            </section>
+            <section id="side_ad">
+              <img src="./right_ad.jpg" alt="right_ad">
+            </section>
+            <section id="weather">
+  
+            </section>
+          </div>
         </div>
       </contents>
     </div>
