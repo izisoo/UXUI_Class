@@ -1,0 +1,53 @@
+/* reset css */
+@import url("./resetcss.css");
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
+.box:active {
+  background: red;
+  transition: 2s;
+} */
+#grpah {
+  width: 610px;
+  border: 3px solid #135675;
+}
+.bar {
+  width: 10px;
+  height: 50px;
+  background: #135675;
+  margin: 5px;
+
+  transition-property: background, width;
+  transition-duration: 1s, 5s;
+}
+
+#graph:hover > .bar {
+  width: 600px;
+}
+
+#graph:hover > .bar:nth-child(1) {
+  background: rebeccapurple;
+  width: 200px;
+}
+#graph:hover > .bar:nth-child(2) {
+  width: 150px;
+  background: #skyblue;
+}
+#graph:hover > .bar:nth-child(3) {
+  background: #e66e4a;
+  width: 400px;
+}
+#graph:hover > .bar:nth-child(4) {
+  background: #a8d176;
+  width: 200px;
+
+}
+#graph:hover > .bar:nth-child(5) {
+  width: 400px;
+
+}
+
+

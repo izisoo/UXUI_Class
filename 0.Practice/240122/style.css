@@ -353,7 +353,7 @@ section {
 
 
 /* today */
-#today .inner-content-slide > div:nth-child(2) .slide-content-info-bottom div:last-child span {
+#today .slide-content-info-bottom > div:nth-child(2) > span:last-child {
   font-size: 10px;
 }
 

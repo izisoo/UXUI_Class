@@ -1,0 +1,202 @@
+/* reset css */
+@import url("./resetcss.css");
+
+/* custom font */
+@import url("./font.css");
+
+
+/* common */
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.re_bao {
+  background: #d9e6ff;
+}
+.ai_bao {
+  background: #f8ebff;
+}
+.fu_bao {
+  background: #defade;
+}
+.rui_bao {
+  background: #fff1d4;
+}
+.hui_bao {
+  background: #ffdcdc;
+}
+
+/* nav */
+section {
+  width: 340px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+section .menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+section a {
+  font-size: 20px;
+  color: #666;
+}
+
+.re_bao section .profile img {
+  box-shadow: 5px 15px 30px rgba(182, 173, 230, 0.8);
+}
+.ai_bao section .profile img {
+  box-shadow: 5px 15px 30px rgba(214, 173, 230, 0.8);
+}
+.fu_bao section .profile img {
+  box-shadow: 5px 15px 30px rgba(189, 230, 173, 0.8);
+}
+.rui_bao section .profile img {
+  box-shadow: 5px 15px 30px rgba(255, 232, 182, 0.8);
+}
+.hui_bao section .profile img {
+  box-shadow: 5px 15px 30px rgba(230, 177, 173, 0.8);
+}
+
+/* profile */
+section .profile {
+  width: 100%;
+  text-align: center;
+  font-family: 'Koulen', sans-serif;
+  letter-spacing: 1px;
+}
+section .profile img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+section .profile h1 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #555;
+  margin-bottom: 5px;
+}
+section .profile h2 {
+  font-weight: normal;
+  font-size: 15px;
+  color: #bbb;
+  margin: 5px 0 30px;
+  letter-spacing: 2px;
+}
+section .btn {
+  display: block;
+  width: 180px;
+  height: 32px;
+  outline: 5px solid rgba(255, 255, 255, 0.6);;
+  border-radius: 16px;
+  margin: 0 auto 20px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.re_bao section .btn {
+  background: linear-gradient(45deg, #94b5f1, #6f9dda);
+  box-shadow: 2px 3px 20px rgba(107, 141, 214, 0.7);
+}
+.ai_bao section .btn {
+  background: linear-gradient(45deg, #c794f1, #f2cbf5);
+  box-shadow: 2px 3px 20px rgba(169, 115, 201, 0.7);
+}
+.fu_bao section .btn {
+  background: linear-gradient(45deg, #9ff194, #27b366);
+  box-shadow: 2px 3px 20px rgba(74, 180, 74, 0.7);
+}
+.rui_bao section .btn {
+  background: linear-gradient(45deg, #ebd50f, #f79b31);
+  box-shadow: 2px 3px 20px rgba(233, 181, 39, 0.7);
+}
+.hui_bao section .btn {
+  background: linear-gradient(45deg, #e78567, #e43f3f);
+  box-shadow: 2px 3px 20px rgba(206, 89, 89, 0.7);
+}
+
+
+/* contact */
+section .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 25px;
+}
+section ul li {
+  border-bottom: 1px dashed #dddddd;
+  width: 75%;
+  padding: 10px 1px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #4d4d4d;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+section ul li:last-child {
+  border-bottom: none;
+}
+section .contact li i {
+  width: 20%;
+  padding: 5px 10px 0 0px;
+  text-shadow: 2px 2px 2px #ddd;
+}
+section ul li img {
+  width: 15px;
+  margin-right: 15px;
+}
+section ul li span {
+  justify-content: left;
+}
+
+/* link */
+section .others {
+  width: 100%;
+  text-align: center;
+}
+section .others a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin: 0 7px;
+  opacity: 0.4;
+  filter: saturate(0.7);
+}
+.others .on {
+  opacity: 1;
+  filter: saturate(1);
+}
+section .others a:nth-child(1) {
+  background: #82b4f5;
+  box-shadow: 5px 5px 10px rgba(74, 131, 255, 0.7);
+}
+section .others a:nth-child(2) {
+  background: #c5a3ec;
+  box-shadow: 5px 5px 10px rgba(195, 141, 206, 0.7);
+}
+section .others a:nth-child(3) {
+  background: #9ee0c7;
+  box-shadow: 5px 5px 10px rgba(151, 207, 159, 0.7);
+}
+section .others a:nth-child(4) {
+  background: #ffc760;
+  box-shadow: 5px 5px 10px rgba(226, 197, 136, 0.7);
+}
+section .others a:nth-child(5) {
+  background: #ff9f9f;
+  box-shadow: 5px 5px 10px rgba(250, 168, 168, 0.7);
+}
