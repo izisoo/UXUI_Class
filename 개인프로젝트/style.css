@@ -1,0 +1,24 @@
+@import url(./resetcss.css);
+
+/* common */
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/* header */
+header {
+  width: 100%;
+  background: #222;
+}
+#header {
+  background: #999;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  font-size: 25px;
+  justify-content: space-between;
+  color: aliceblue;
+}
+
