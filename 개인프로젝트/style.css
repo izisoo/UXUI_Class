@@ -80,14 +80,6 @@ content {
   margin-bottom: 100px;
 }
 
-#content h1 {
-  font-family: butler;
-  font-weight: 600;
-  font-size: 5rem;
-}
-#content h5 {
-  font-family: suit;
-}
 .section {
   width: 100%;
   display: flex;
@@ -101,6 +93,7 @@ content {
 .content_left {
   display: flex;
   align-items: baseline;
+  /* border: 1px solid red; */
 }
 .content_left h1 {
   padding: 5px;
@@ -127,28 +120,34 @@ content {
   width: 100px;
   height: 100px;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
+  border: 1px solid red;
+  position: relative;
 }
-.content-right div {
-  width: 40px;
-  height: 2px;
+.content-right button {
+  padding: 30px 10px;
+  border: 1px solid red;
+  background: transparent;
+}
+.content-right button:hover {
+  cursor: pointer;
+}
+#preview_btn div {
+  width: 50px;
+  height: 1px;
   background: #ededed;
 }
-.content-right div > div {
+#preview_btn div:last-child {
   transform: rotate(90deg);
 }
-
+.preview {
+position: absolute;
+width: 600px;
+transform: translate(-70%, 100%);
+}
 
 /* about */
-
-.preview_about {
-  display: none;
-}
-
-.about:click .preview_about {
-  display: block;
-}
 
 
 /* footer */

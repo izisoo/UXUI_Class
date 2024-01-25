@@ -1,5 +1,5 @@
 const header = document.querySelector(".header")
-const plus_btn = document.querySelector(".content_right")
+const previw_btn = document.querySelector("#preview_btn")
 const preview = document.querySelector(".preview")
 
 window.addEventListener("scroll", () => {
@@ -11,6 +11,11 @@ window.addEventListener("scroll", () => {
   }
 })
 
-plus_btn.addEventListener("click", () => {
-  preview.classList.toggle("active");
-})
+previw_btn.addEventListener('click', function() {
+  const isPreviewVisible = getComputedStyle(preview).display !== 'none'
+  if (getComputedStyle(preview).display !== 'none') {
+    preview.style.display = 'none';
+  } else {
+    preview.style.display = 'block';
+  }
+});

@@ -12,3 +12,20 @@
   font-weight: normal;
   font-style: normal;
 }
+h1{
+  font-family: butler;
+  font-weight: 600;
+  font-size: 5rem;
+}
+h2{
+  font-family: butler;
+  font-weight: 400;
+  font-size: 3rem;
+}
+h3{
+  font-family: butler;
+  font-size: 2rem;
+}
+h5 {
+  font-family: suit;
+}
