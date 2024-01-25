@@ -1,0 +1,63 @@
+
+1. 쇼핑몰 레이아웃 - 예제
+
+2. flex 개념 설명
+3. flex 예제 사이트
+4. flex 연습 예제
+
+5. grid 개념설명
+6. grid 예제사이트
+7. grid 연습예제
+
+8.Bootsrap : 레이아웃 Framework
+
+9.SCSS
+
+=> CSS Variable 
+
+10. Figma 앱페이지 기획(*10개 정도의 페이지 기획) + html & CSS & 간단한 JS
+
+-------------------2월 첫째주 까지 ----------------
+
+JS(*JQuery) / TS / React
+> vue or Node (option)
+
+global = 가장 바깥쪽 영역 = 모든것을 포함할 수 있는 영역 = 전역 요소
+global navigation bar / banner = GNB
+
+
+***
+이미지 비워놓는 칸 만들기
+<img src="http://placehold.it/90x160" alt="#">
+***
+
+
+~시멘틱 태그 자주 사용하기~
+
+*
+div.menu.item_$ => $는 숫자적용, 
+*
+class 두개 쓰고싶으면 점 각각 찍기 => css 에서도 선택자에서 띄어쓰기x
+
+노가다 방식을 줄일 수 있는 방법 없나?.?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

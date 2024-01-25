@@ -1,0 +1,44 @@
+/* body {
+  background: greenyellow;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+} */
+
+/* body {
+  background: greenyellow;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+background: #000;
+width: 100px;
+height: 100px;
+} */
+
+.parent {
+  border: 5px solid #0f0;
+  height: 500px;
+  display: flex;
+  align-items: stretch;
+}
+.parent > div {
+  width: 300px;
+  background: crimson;
+  text-align: center;
+  color: #fff;
+  margin: 5px;
+}
+/* .child_1 {
+  height: 100px;
+} */
