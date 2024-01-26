@@ -1,0 +1,157 @@
+/* reset */
+@import url("./resetcss.css");
+
+
+/* ==== desktop ==== */
+@media screen and (min-width: 960px) {
+  /* common */
+  #wrap {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* info */
+  .info_section {
+    order: 0;
+    position: absolute;
+    top: 30px;
+    top: 1.875rem;
+    right: 30px;
+    right: 1.875rem;
+    z-index: 30;
+    width: auto;
+    border-bottom: 0;
+  }
+  .info_list li {
+    width: auto;
+    margin-left: 15px;
+    margin-left: 0.9375rem;
+  }
+  .info_list li a {
+    padding: 0;
+  }
+
+  /* header */
+  .header {
+    order: 1;
+    justify-content: flex-end;
+    position: static;
+  }
+  .logo {
+    width: 12.5%;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    position: static;
+    width: 87.5%;
+  }
+  .gnb {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: 100%;
+    text-shadow: 0 1px 1px #25ab5e;
+  }
+  .gnb li {
+    margin-left: 5.95%;
+    background: none;
+  }
+  .gnb li a {
+    width: auto;
+    padding: 0;
+    text-indent: 0;
+  }
+  .gnb li span {
+    display: none;
+  }
+  .menu_toggle_btn {
+    display: none;
+  }
+
+
+  /* slider ~ rankup */
+  .slider_section {
+    order: 2;
+    width: 50%;
+    background: #3c90be;
+  }
+  .gallery_section {
+    order: 3;
+    width: 27.038%;
+    height: 440px;
+    background: #f8de73;
+  }
+  .gallery_list {
+    display: block;
+  }
+  .gallery_list li {
+    width: auto;
+  }
+  .gallery_list li:nth-child(2) {
+    margin-left: 0;
+  }
+  .rankup_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rankup_list li {
+    width: auto;
+    text-align: center;
+  }
+  .rankup_list li:nth-child(2) {
+    margin-top: 15px;
+  }
+  .rankup_list li a {
+    display: inline;
+  }
+
+
+
+  /* latest ~ social */
+  .latest_post_section {
+    order: 5;
+    width: 30%;
+    background: #9cabe4;
+  }
+  .popular_post_section {
+    order: 6;
+    width: 30%;
+    background: #d76817;
+  }
+  .banner_section {
+    order: 7;
+    width: 23%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .banner_section div {
+    flex: 1;
+  }
+  .banner_section .banner_box_01 {
+    background: #0175bb;
+  }
+  .banner_section .banner_box_02 {
+    background: #1261c9;
+  }
+  .social_section {
+    order: 8;
+    width: 17%;
+    height: 270px;
+    background: #fe6eda;
+  }
+
+  /* footer */
+  .footer {
+    order: 9;
+    width: 100%;
+    height: 94px;
+    background: #474747;
+  }
+}

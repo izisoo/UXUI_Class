@@ -121,8 +121,10 @@ flex라는 축약표기법은 grow는 필수기재 / shrink & basis는 옵션
 ****flex를 사용할 때 높이값은 사용하지 않아도 갠춘
 
 
+*css에서 특정 수치값을 도출하기 위해서 직접 연산자를 활용해서 계산
+(*calc( ))
 
-
+file:///C:/Users/EZEN/Desktop/uxui/240117/index.html#
 
 
 

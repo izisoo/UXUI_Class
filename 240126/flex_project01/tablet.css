@@ -1,0 +1,105 @@
+/* reset */
+@import url("./resetcss.css");
+
+/* ==== tablet ==== */
+@media screen and (min-width: 768px) {
+  /* common */
+  #wrap {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* header */
+  .header {
+    display: flex;
+  }
+  .logo {
+    positioin: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 15.625%;
+    padding: 0;
+  }
+  .logo a {
+    display: block;
+    padding: 50px 0;
+    padding: 3.125rem;
+  }
+  .nav {
+    position: relative;
+    min-height: 80px;
+    min-height: 5rem;
+    background: #2ecc71;
+  }
+  .gnb {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 20;
+    width: 308px;
+    width: 40.1%;
+  }
+  .menu_toggle_btn {
+    top: 50%;
+    right: 30px;
+    right: 1.875rem;
+    z-index: 20;
+    margin-top: 15px;
+    margin-top: 0.9375rem;
+  }
+
+  /* latest */
+  .latest_post_list {
+    order: 5;
+  }
+
+  /* popular */
+  .popular_post_section {
+    order: 6;
+  }
+
+  /* latest & popular */
+  .latest_post_section, .popular_post_section {
+    width: 14.6%;
+    padding: 0 5.2008%;
+  }
+  .gallery_section {
+    order: 8;
+    width: 71.3%;
+    padding: 0 40px;
+  }
+  .gallery_list {
+    display: flex;
+  }
+  .gallery_list li {
+    width: 47%px;
+  }
+  .gallery_list li:nth-child(2) {
+    margin-left: 28px;
+  }
+
+  .gallery_section {
+    order: 6;
+    padding: 50px 12.5%;
+    text-align: center;
+    background: #e65d5d;
+    text-shadow: 0 1px 1px #c43434;
+  }
+  .gallery_section img {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: ;
+  }
+  .gallery_list li:nth-child(2) {
+    margin-top: 30px;
+  }
+  .gallery_list li figcaption {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+}
