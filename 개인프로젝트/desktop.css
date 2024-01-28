@@ -136,32 +136,127 @@
     /* border: 1px solid red; */
     position: relative;
   }
-  #preview_btn {
+  .content-right button:hover {
+    cursor: pointer;
+  }
+
+  
+  /* about */
+  #preview_btn_01 {
     padding: 30px 10px;
     background: transparent;
     border: none;
   }
-  .content-right button:hover {
-    cursor: pointer;
-  }
-  #preview_btn div {
+  #preview_btn_01 div {
     width: 50px;
     height: 1px;
     background: #ededed;
   }
-  #preview_btn div:last-child {
+  #preview_btn_01 div:last-child {
     transform: rotate(90deg);
   }
-  .preview {
+  .preview_01 {
   position: absolute;
   width: 600px;
-  transform: translate(-70%, 100%);
+  transform: translate(-90%, 100%);
   background: #242424;
   }
-  
-  /* about */
-  
-  
+
+  /* work */
+  #preview_btn_02 {
+    padding: 30px 10px;
+    background: transparent;
+    border: none;
+  }
+  #preview_btn_02 div {
+    width: 50px;
+    height: 1px;
+    background: #ededed;
+  }
+  #preview_btn_02 div:last-child {
+    transform: rotate(90deg);
+  }
+  .preview_02 {
+  /* border: 1px solid red; */
+  position: absolute;
+  width:850px;
+  transform: translate(-50%, 80%);
+  background: #242424;
+  margin: 0 200px;
+  }
+  .preview_02 a {
+    display: block;
+    font-family: butler;
+    font-size: 2.5em;
+    padding: 30px 0;
+    opacity: 0.6;
+    border-top: 1px solid #595959;
+  }
+  .preview_02 a:hover {
+    opacity: 1;
+  }
+
+
+  /* contact */
+  #preview_btn_03 {
+    padding: 30px 10px;
+    background: transparent;
+    border: none;
+  }
+  #preview_btn_03 div {
+    width: 50px;
+    height: 1px;
+    background: #ededed;
+  }
+  #preview_btn_03 div:last-child {
+    transform: rotate(90deg);
+  }
+  .preview_03 {
+  width: 150px;
+  position: absolute;
+  transform: translate(-500%, 350%);
+  background: #242424;
+  text-align: center;
+  }
+  #contact_to_me {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 1px solid #ededed;
+    border-radius: 50px;
+    opacity: 0.6;
+  }
+  #contact_to_me:hover {
+    opacity: 1;
+    border: 2px solid #ededed;
+  }
+  #arrow{
+    position: relative;
+    margin-left: 5px;
+  }
+  #arrow > div {
+    position: absolute;
+    height: 1px;
+    background: #ededed;
+  }
+  #arrow div:nth-child(1) {
+    transform: rotate(-45deg);
+    width: 21px;
+  }
+  #arrow div:nth-child(2) {
+    transform: rotate(90deg);
+    width: 17px;
+    left: 10px;
+  }  
+  #arrow div:nth-child(3) {
+    top: -8px;
+    width: 15px;
+    left: 3px;
+  }
+
+
+
   /* footer */
   footer {
     width: 100%;
