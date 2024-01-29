@@ -1,28 +1,32 @@
-@import url('https://fonts.cdnfonts.com/css/butler');
-/* font-family: 'Butler', sans-serif; */
+@import url("https://fonts.cdnfonts.com/css/butler?styles=20999,21000,20997,20998,20995,20996,20994");
 @font-face {
-  font-family: 'SUIT-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: butler;
-  src: url('https://fonts.cdnfonts.com/css/butler');
+  font-family: "butler";
+  src: url("https://fonts.cdnfonts.com/css/butler");
   font-weight: normal;
   font-style: normal;
 }
-h1{
+@font-face {
+  font-family: "masconia";
+  src: url("https://fonts.cdnfonts.com/css/masconia");
+}
+h1 {
   font-family: butler;
   font-weight: 600;
   font-size: 5rem;
 }
-h2{
+h2 {
   font-family: butler;
   font-weight: 400;
   font-size: 3rem;
 }
-h3{
+h3 {
   font-family: butler;
   font-size: 2rem;
 }

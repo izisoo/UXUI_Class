@@ -7,13 +7,14 @@
     height: 100%;
     background: #242424;
     position: relative;
+    transition: all 0.3s;
   }
 
   /* header */
   .header {
     position: fixed;
     width: 100%;
-    background: #595959;
+    background: #1f2027;
     display: flex;
     justify-content: center;
     order: 1;
@@ -70,29 +71,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
+    position: relative;
     order: 2;
+  }
+  #title_text {
+    position: absolute;
+    font-family: "masconia";
+    font-size: 10em;
+    left: 50%;
+    transform: translate(-50%);
   }
   #home-img {
     position: relative;
+    width: 100%;
   }
   #home-img img {
     display: block;
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    height: auto;
+    max-height: 920px;
+    object-fit: cover;
+    object-position: center bottom;
     height: auto;
     opacity: 0.5;
   }
-  #home-img span {
+  .figure_text {
+    display: none;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .figure_text span {
     position: absolute;
-    left: 55%;
-    top: 65%;
+    left: 50%;
+    top: 50%;
     color: #ededed;
-    font-size: 1.5rem;
+    font-size: 1 rem;
     font-family: butler;
     letter-spacing: 1px;
-    padding: 10px;
-    opacity: 0.5;
+    opacity: 0.8;
   }
   
   /* content */
@@ -129,6 +148,7 @@
     /* border: 1px solid red; */
   }
   .content_left h1 {
+    font-weight: 400;
     padding: 5px;
   }
   .content_left div {
@@ -159,6 +179,9 @@
   }
   .content-right button:hover {
     cursor: pointer;
+  }
+  #preview_btn_01:hover div, #preview_btn_02:hover div, #preview_btn_03:hover div {
+    background-color: #FF4D00 ;
   }
 
   
@@ -265,13 +288,14 @@
     align-items: center;
     font-size: 1em;
     padding: 10px 20px;
-    border: 2px solid #ededed;
+    border: 1px solid #ededed;
     border-radius: 50px;
     opacity: 0.6;
   }
   #contact_to_me:hover {
+    background: #595959;
     opacity: 1;
-    border: 2px solid #ededed;
+    border: 1px solid #ededed;
   }
   #arrow{
     position: relative;
