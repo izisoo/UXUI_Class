@@ -1,0 +1,71 @@
+
+/* === deskop === */
+@media screen and (min-width: 1132px) {
+  
+  /* display */
+  .display-section {
+    text-align: left;
+    overflow: hidden;
+  }
+  .display-section .section-title {
+    float: left;
+    margin-bottom: 5px;
+  }
+  .display-section .description {
+    position: relative;
+    float: right;
+    padding-left: 20px;
+    color: #616161;
+  }
+  .display-section .description::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 44px;
+    background: #e0e0e0;
+    top: 3px;
+    left: 0;
+  }
+
+  /* promotion */
+  .promotion-section .promo-list li {
+    width: calc(268px / 1132 * 100%);
+    margin-left: 1.766%;
+  }
+
+  /* work */
+  .work-section .section-title {
+    text-align: left;
+  }
+  .work-section .work-list li {
+    width: 25%;
+  }
+
+  /* blog */
+  .blog-section .section-title {
+    float: left;
+    margin-bottom: 0;
+  }
+  .blog-section .blog-list {
+    float: right;
+    width: 74%;
+  }
+  .blog-section .blog-list li {
+    width: 31%;
+    margin-left: 2%;
+  }
+  .blog-section .blog-list li h3 {
+    text-align: left;
+  }
+
+  /* contact */
+  .contact-section .section-title {
+    float: left;
+    margin-bottom: 0;
+  }
+  .contact-section .form-box {
+    float: right;
+    width: 73%;
+  }
+
+}

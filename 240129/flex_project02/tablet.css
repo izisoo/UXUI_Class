@@ -1,0 +1,123 @@
+
+/* === tablet === */
+@media screen and (min-width: 768px) {
+  
+  /* common */
+  .divider {
+    margin: 260px auto 0;
+  }
+  .m-divider {
+    margin: 124px auto 0;
+  }
+
+  /* header */
+  .header {
+    position: static;
+    padding: 28px 52px;
+  }
+  .header .gnb {
+    display: block;
+    position: static;
+    background: none;
+    float: right;
+    width: auto;
+    margin-top: 1dvb;
+  }
+  .header .gnb li {
+    float: left;
+    border-bottom: 0;
+    margin-left: 21px;
+  }
+  .header .gnb li a {
+    color: #3f51b5;
+    padding: 0;
+    font-size: 20px;
+  }
+  .header .menu-toggle-btn {
+    display: none;
+  }
+
+  /* display */
+  .display-section {
+    margin-top: 95px;
+  }
+
+  /* promotion */
+  .promotion-section {
+    margin-top: 110px;
+  }
+  .promotion-section .promo-list li {
+    float: left;
+    width: 23.177%;
+    margin-left: 1.822%;
+    margin-top: 0;
+  }
+  .promotion-section .promo-list li:first-child {
+    margin-left: 0;
+  }
+
+  /* work */
+  .work-section {
+    margin-top: 118px;
+    overflow: hidden;
+  }
+  .work-section .section-title {
+    margin-bottom: 76px;
+  }
+  .work-section .work-list li {
+    width: 50%;
+    float: left;
+  }
+  .work-section .work-list li .info {
+    left: 37px;
+  }
+  .work-section .work-list li a:hover .info {
+    transform: translateY(37px);
+  }
+
+  /* blog */
+  .blog-section {
+    margin-top: 124px auto 0;
+    overflow: hidden;
+  }
+  .blog-section .section-title {
+    margin-bottom: 76px;
+  }
+  .blog-section .blog-list li {
+    float: left;
+    width: 31%;
+    margin-top: 0;
+    margin-left: 2%;
+  }
+  .blog-section .blog-list li:first-child {
+    margin-right: 0;
+  }
+
+  /* contact */
+  .contact-section {
+    margin-top: 176px;
+  }
+  .contact-section .section-title {
+    margin-bottom: 76px;
+  }
+  .contact-section .form-box .form,
+  .contact-section .form-box .textarea {
+    float: left;
+    width: 48%;
+  } 
+  .contact-section .form-box .form {
+    margin-right: 2%;
+  }
+  .contact-section .form-box .form input:last-child {
+    margin-bottom: 0;
+  }
+
+  /* footer */
+  .footer iframe {
+    height: 430px;
+  }
+  .footer p {
+    margin: 34px 0;
+  }
+
+}
