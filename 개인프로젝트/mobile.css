@@ -52,7 +52,7 @@
 
   /* figure */
   #title_text {
-   width: 390px;
+    width: 390px;
   }
   #title_text > h1 {
     font: 200 9em/1 "Roslindale";
@@ -81,16 +81,25 @@
   .section {
     padding: 15px 20px 20px 30px;
   }
+  .content_left {
+    min-width: 110px;
+  }
+  .content-center {
+    min-width: 230px;
+    margin: auto 10px;
+  }
+  .content-right {
+    min-width: 70px;
+  }
   .content_left h1 {
-    padding: 5px;
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   .content-center h1 {
     line-height: 0.8;
     margin-bottom: 5px;
-    font-size: 3em;
+    font-size: 4em;
   }
-  
+
   /* about */
   .preview_01 {
     overflow: hidden;
@@ -119,4 +128,22 @@
   #contact_to_me {
     padding: 5px 0px 6px 15px;
   }
+}
+
+/*=== contact page ===*/
+article {
+  padding: 150px 50px;
+}
+article h1 {
+  font-size: 3rem;
+}
+article div {
+  margin: 10% 0;
+}
+article div h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+article div h4 {
+  font-size: 2rem;
 }

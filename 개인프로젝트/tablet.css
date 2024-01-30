@@ -1,6 +1,5 @@
 @media screen and (min-width: 781px) and (max-width: 1199px) {
   /* header */
-
   /* figure */
   #title_text {
     width: 780px;
@@ -9,14 +8,17 @@
     font: 200 10em/1 "Roslindale";
   }
   /* content */
-  .content-center h1 {
-    font-size: 4em;
+  .section {
+    padding: 20px 30px 25px;
+  }
+  .content_left {
+    min-width: 130px;
+  }
+  .content-center {
+    min-width: 358px;
   }
 
   /* about */
-  #preview_btn_01 div {
-    width: 40px;
-  }
   .preview_01 {
     width: 80%;
     transform: translate(0, 100%);
@@ -34,4 +36,9 @@
 
   /* contact */
 
+}
+
+/*=== contact page ===*/
+article {
+  padding: 150px 100px;
 }
