@@ -51,28 +51,17 @@
   }
 
   /* figure */
-  figure {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
-    order: 2;
+  #title_text {
+   width: 390px;
   }
-  #home-img span {
-    position: absolute;
-    left: 55%;
-    top: 65%;
-    color: #ededed;
-    font-size: 1.5rem;
-    font-family: butler;
-    letter-spacing: 1px;
-    padding: 10px;
-    opacity: 0.5;
+  #title_text > h1 {
+    font: 200 9em/1 "Roslindale";
+    white-space: wrap;
+    text-align: right;
   }
 
   /* content */
-  content {
+  .content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -90,80 +79,24 @@
   }
 
   .section {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 15px 20px 20px 30px;
-    border-top: 1px solid #ededed;
   }
-
-  .content_left {
-    display: flex;
-    align-items: baseline;
-    /* border: 1px solid red; */
-  }
-  #content h1 {
+  .content_left h1 {
     padding: 5px;
     font-size: 3.5rem;
   }
-  .content_left div {
-    width: 30px;
-    height: 2px;
-    background: #ededed;
-    margin-left: 4px;
-  }
-
-  .content-center {
-    width: 350px;
-    text-align: right;
-    margin: auto 20px;
-  }
-  .content-center h5 {
-    font-weight: 100;
-    padding-right: 5px;
-    margin-top: -5px;
-  }
-
-  .content-right {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
-    position: relative;
-  }
-  .content-right button:hover {
-    cursor: pointer;
-  }
-
-  /* about */
   .content-center h1 {
     line-height: 0.8;
     margin-bottom: 5px;
+    font-size: 3em;
   }
-
-  #preview_btn_01 {
-    padding: 30px 10px;
-    background: transparent;
-    border: none;
-  }
-  #preview_btn_01 div {
-    width: 50px;
-    height: 1px;
-    background: #ededed;
-  }
-  #preview_btn_01 div:last-child {
-    transform: rotate(90deg);
-  }
+  
+  /* about */
   .preview_01 {
-    position: absolute;
     overflow: hidden;
     max-height: 240px;
     width: 100%;
-    transform: translate(3%, 85%);
-    background: #242424;
+    transform: translate(3%, 100%);
   }
   .preview_01 h2 {
     font-size: 2.5rem;
@@ -173,45 +106,17 @@
   }
 
   /* work */
-  .work {
-    position: relative;
-  }
   .preview_02 {
-    /* border: 1px solid red; */
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, 15%);
-    background: #242424;
   }
 
   /* contact */
   .preview_03 {
     width: 125px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
     transform: translate(40%, 200%);
-    background: #242424;
-    text-align: center;
     font-size: 14px;
   }
   #contact_to_me {
     padding: 5px 0px 6px 15px;
-  }
-  #arrow div:nth-child(1) {
-    transform: rotate(-45deg);
-    width: 17px;
-  }
-  #arrow div:nth-child(2) {
-    transform: rotate(90deg);
-    width: 15px;
-    left: 8px;
-  }
-  #arrow div:nth-child(3) {
-    top: -7px;
-    width: 14px;
-    left: 1px;
   }
 }

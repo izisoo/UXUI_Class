@@ -1,35 +1,36 @@
-@import url("https://fonts.cdnfonts.com/css/butler?styles=20999,21000,20997,20998,20995,20996,20994");
+/* SUIT */
 @font-face {
   font-family: "SUIT-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
+/* Butler */
 @font-face {
-  font-family: "butler";
-  src: url("https://fonts.cdnfonts.com/css/butler");
+  font-family: "Butler";
+  src: url("https://fonts.cdnfonts.com/css/butler?styles=20999,21000,20997,20998,20995,20996,20994") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "masconia";
-  src: url("https://fonts.cdnfonts.com/css/masconia");
-}
+
+/* Roslindale */
+@import url('https://fonts.cdnfonts.com/css/roslindale?styles=147507');
+
 h1 {
-  font-family: butler;
+  font-family: "Butler";
   font-weight: 600;
   font-size: 5rem;
 }
 h2 {
-  font-family: butler;
+  font-family: "Butler";
   font-weight: 400;
   font-size: 3rem;
 }
 h3 {
-  font-family: butler;
+  font-family: "Butler";
   font-size: 2rem;
 }
 h5 {
-  font-family: suit;
+  font-family: "SUIT-Regular";
 }
