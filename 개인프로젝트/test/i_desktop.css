@@ -1,22 +1,184 @@
+/*=== var ===*/
+/*=== reset ===*/
+@import url("https://fonts.cdnfonts.com/css/roslindale?styles=147507,147527,147520,147523,147502,147510,147536,147549");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*=== font ===*/
+/* SUIT */
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* h1 {
+  font: normal 5rem/1 "Roslindale";
+  letter-spacing: 2px;
+  color: #ededed;
+}
+* h2 {
+  font: normal 4rem/1 "Roslindale";
+  letter-spacing: 2px;
+  color: #ededed;
+}
+* h3 {
+  font: normal 3rem/1 "Roslindale";
+  letter-spacing: 2px;
+  color: #ededed;
+}
+* h4 {
+  font: normal 2rem/1 "Roslindale";
+  letter-spacing: 2px;
+  color: #ededed;
+}
+* h5 {
+  font-family: "SUIT-Regular";
+  color: #ededed;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
 .wrap {
   width: 100%;
   height: 100%;
   background: #070b16;
 }
-.wrap .header {
+
+.header {
   width: 100%;
-  height: 75px;
-  border: 1px solid #f00;
+  background: #070b16;
   position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-blend-mode: multiply;
+  z-index: 1;
 }
-.wrap .header #header_ul {
+.header #header {
+  width: 80%;
+  height: 75px;
+}
+.header #header .header_ul {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font: 300 25px/1 "roslindale";
+  letter-spacing: 2px;
+  color: #ededed;
 }
-.wrap .header #header_ul .header_toggle {
+.header #header .header_ul .header_gnb a {
+  margin-left: 20px;
+}
+.header #header .header_ul .header_toggle {
   display: none;
 }
-.wrap .header #header_ul .header_gnb_mo {
+.header #header .header_ul .header_gnb_mo {
   display: none;
+}
+
+.main {
+  width: 100%;
+  height: 75vh;
+  background: #070b16;
+  position: relative;
+  overflow: hidden;
+}
+.main #main_img {
+  width: 100%;
+  height: 100%;
+}
+.main #main_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+  opacity: 0.7;
+}
+.main #main_text {
+  position: absolute;
+  width: 1280px;
+  margin: 0 auto;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, 40%);
+}
+.main #main_text h1 {
+  text-align: center;
+  color: #ff4d00;
+  font: 200 10em/1 "roslindale";
+}
+
+.section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr 1fr 1fr auto;
+  grid-template-areas: "number center_top toggle" "number center_bottom toggle" "preview preview preview";
+  justify-content: space-between;
+  align-self: center;
+  padding: 0 10%;
+  gap: 2%;
+}
+.section .number {
+  border: 1px solid red;
+  display: flex;
+  align-items: baseline;
+  grid-area: number;
+}
+.section .number div {
+  width: 30px;
+  height: 2px;
+  background: #ededed;
+  right: 0;
+}
+.section .center {
+  text-align: right;
+}
+.section .center h2 {
+  grid-area: center_top;
+  border: 1px solid red;
+}
+.section .center h5 {
+  grid-area: center_bottom;
+  border: 1px solid red;
+}
+.section .toggle {
+  grid-area: toggle;
+  border: 1px solid red;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.section .toggle div {
+  width: 50px;
+  height: 1px;
+  background: #ededed;
+}
+.section .toggle div:first-child {
+  transform: rotate(90deg);
+}
+.section .preview {
+  width: 100%;
+  height: 100%;
+  grid-area: preview;
+  background: #f00;
 }/*# sourceMappingURL=i_desktop.css.map */

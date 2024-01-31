@@ -8,21 +8,125 @@
 
 .header {
   width: 100%;
-  height: 75px;
-  border: 1px solid #f00;
+  background: $background;
   position: fixed;
-  .header_ul {
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-blend-mode: multiply;
+  z-index: 1;
+  #header {
+    width: 80%;
+    height: 75px;
+
+    .header_ul {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font: 300 25px/1 "roslindale";
+      letter-spacing: 2px;
+      color: $primary;
+      .header_gnb {
+        a {
+          margin-left: 20px;
+        }
+      }
+      .header_toggle {
+        display: none;
+      }
+      .header_gnb_mo {
+        display: none;
+      }
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  height: 75vh;
+  background: $background;
+  position: relative;
+  overflow: hidden;
+  #main_img {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+      opacity: 0.7;
+    }
+  }
+  #main_text {
+    position: absolute;
+    width: 1280px;
+    margin: 0 auto;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 40%);
+    h1 {
+      text-align: center;
+      color: $accent;
+      font: 200 10em/1 "roslindale";
+    }
+  }
+}
+
+.section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr 1fr 1fr auto;
+  grid-template-areas: "number center_top toggle" "number center_bottom toggle" "preview preview preview";
+  justify-content: space-between;
+  align-self: center;
+  padding: 0 10%;
+  gap: 2%;
+  .number {
+    border: 1px solid red;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    li {
-      padding: ;
+    align-items: baseline;
+    grid-area: number;
+    div {
+      width: 30px;
+      height: 2px;
+      background: $primary;
+      right: 0;
     }
-    .header_toggle {
-      display: none;
+  }
+  .center {
+    text-align: right;
+    h2 {
+      grid-area: center_top;
+      border: 1px solid red;
     }
-    .header_gnb_mo {
-      display: none;
+    h5 {
+      grid-area: center_bottom;
+      border: 1px solid red;
     }
+  }
+  .toggle {
+    grid-area: toggle;
+    border: 1px solid red;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    div {
+      width: 50px;
+      height: 1px;
+      background: $primary;
+    }
+    div:first-child {
+      transform: rotate(90deg);
+    }
+  }
+  .preview {
+    width: 100%;
+    height: 100%;
+    grid-area: preview;
+    background: #f00;
   }
 }
