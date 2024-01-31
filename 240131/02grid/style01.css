@@ -1,0 +1,49 @@
+@import url("./resetcss.css");
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 100px 1fr 300px 100px;
+  grid-template-areas: "header header header" "welcome welcome welcome" "banner main aside" "footer footer footer";
+}
+#wrap div {
+  border: 1px solid #000;
+  padding-top: 20px;
+}
+
+.header {
+  grid-area: header;
+  background: khaki;
+}
+.welcome {
+  grid-area: welcome;
+  background: url("./grid-img/01/welcome-image.jpg") center/cover no-repeat;
+}
+.banner {
+  grid-area: banner;
+}
+.main {
+  padding: 20px;
+  text-align: left;
+  grid-area: main;
+  overflow: hidden;
+}
+.main h1 {
+  margin-bottom: 20px;
+}
+.main article {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.aside {
+  grid-area: aside;
+}
+.footer {
+  grid-area: footer;
+  background-color: khaki;
+}

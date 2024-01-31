@@ -1,0 +1,28 @@
+.parent {
+  border: 5px solid slateblue;
+  background: rgb(185, 177, 238) ;
+  display: grid;
+  grid-template-areas: "header header header . ." ". . gnb content lnb" "gnb footer footer . .";
+}
+.parent div {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid slateblue;
+}
+
+.header {
+  grid-area: header;
+}
+.gnb {
+  grid-area: gnb;
+}
+.content {
+  grid-area: content;
+}
+.lnb {
+  grid-area: lnb;
+}
+.footer {
+  grid-area:footer;
+}

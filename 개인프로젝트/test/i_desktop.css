@@ -1,0 +1,22 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: #070b16;
+}
+.wrap .header {
+  width: 100%;
+  height: 75px;
+  border: 1px solid #f00;
+  position: fixed;
+}
+.wrap .header #header_ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap .header #header_ul .header_toggle {
+  display: none;
+}
+.wrap .header #header_ul .header_gnb_mo {
+  display: none;
+}/*# sourceMappingURL=i_desktop.css.map */

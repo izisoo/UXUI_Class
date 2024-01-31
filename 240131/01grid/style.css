@@ -1,0 +1,23 @@
+.parent {
+  border: 5px solid pink;
+  width:900px ;
+  height: 300px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+.parent div {
+  background: papayawhip;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #302b2b;
+  font-size: 30px;
+  line-height: 98px;
+}
+.parent div:nth-child(2) {
+  justify-self: end;
+  align-self: end;
+}

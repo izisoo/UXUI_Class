@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+  
+  #wrap {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "welcome" "banner" "main" "aside" "footer";
+    grid-template-rows: 100px 600px 100px 1fr 100px 100px;
+  }
+
+
+}

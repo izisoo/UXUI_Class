@@ -1,0 +1,16 @@
+.parent {
+  border: 5px solid royalblue;
+  background: skyblue;
+  display: grid;
+  grid-template-areas: ". . . item item" " . . . item item";
+}
+.parent div {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid royalblue;
+}
+.item {
+  background: #fff;
+  grid-area: item;
+}
