@@ -128,47 +128,55 @@ body {
   font: 200 10em/1 "roslindale";
 }
 
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section {
-  width: 100%;
+  width: 60%;
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: 1fr 1fr 1fr auto;
-  grid-template-areas: "number center_top toggle" "number center_bottom toggle" "preview preview preview";
+  grid-template-columns: 17% 1fr 17%;
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-areas: "number center toggle" "number center toggle" "preview preview preview";
   justify-content: space-between;
-  align-self: center;
-  padding: 0 10%;
+  align-items: center;
+  padding: 30px 5%;
   gap: 2%;
+  border-top: 1px solid #ededed;
 }
 .section .number {
-  border: 1px solid red;
+  min-width: 125px;
   display: flex;
   align-items: baseline;
   grid-area: number;
+  margin-right: 20px;
 }
 .section .number div {
   width: 30px;
   height: 2px;
   background: #ededed;
-  right: 0;
+  padding-left: 5px;
 }
 .section .center {
+  grid-area: center;
   text-align: right;
-}
-.section .center h2 {
-  grid-area: center_top;
-  border: 1px solid red;
-}
-.section .center h5 {
-  grid-area: center_bottom;
-  border: 1px solid red;
+  margin-right: 20px;
 }
 .section .toggle {
   grid-area: toggle;
-  border: 1px solid red;
-  padding: 10px 20px;
+  width: 70px;
+  height: 70px;
+  background: transparent;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .section .toggle div {
+  position: absolute;
   width: 50px;
   height: 1px;
   background: #ededed;
@@ -180,5 +188,101 @@ body {
   width: 100%;
   height: 100%;
   grid-area: preview;
-  background: #f00;
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 1200px) {
+  .main_text {
+    width: 780px;
+  }
+  .section .content_left {
+    min-width: 130px;
+  }
+  .section .content-center {
+    min-width: 400px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 768px) {
+  .header #header {
+    width: 85%;
+  }
+  .header .header_gnb {
+    display: none;
+  }
+  .header .header_toggle {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    justify-content: space-between;
+    z-index: 99;
+  }
+  .header .header_toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #ededed;
+  }
+  .header .header_toggle span:nth-child(2) {
+    margin: 8px 0;
+  }
+  .header .header_gnb_mo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    background: #ededed;
+    padding: 70px 0 600px;
+  }
+  .header .header_gnb_mo a {
+    color: #242424;
+    padding: 20px;
+    display: block;
+    font-weight: bold;
+  }
+  .main .main_text {
+    padding: 20px;
+    width: 350px;
+  }
+  .main .main_text h1 {
+    font-size: 9em;
+    white-space: wrap;
+    text-align: center;
+  }
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .content #content {
+    width: 100%;
+    max-width: 780px;
+    position: relative;
+  }
+}
+.section {
+  width: 100%;
+}
+.section .content- left {
+  min-width: 110px;
+}
+.section .content- left h1 {
+  font-size: 4rem;
+}
+.section .content- center {
+  min-width: 275px;
+  margin: auto 10px;
+}
+.section .content- center h1 {
+  line-height: 0.8;
+  margin-bottom: 5px;
+  font-size: 4em;
+}
+.section .content- right {
+  min-width: 70px;
 }/*# sourceMappingURL=i_desktop.css.map */

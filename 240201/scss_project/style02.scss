@@ -1,0 +1,69 @@
+
+.sth {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  .cir {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    background: purple;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .rec {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    position: absolute;
+    background: purple;
+    width: 25px;
+    height: 50px;
+  }
+}
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.figma {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(auto, 1fr);
+  div {
+    width: 50px;
+    height: 50px;
+    background: #000;
+  }
+  .a1 {
+    border-radius: 25px 0px 0px 25px;
+    background: crimson;
+  }
+  .a2 {
+    border-radius: 0px 25px 25px 0px;
+    background: orangered;
+  }
+  .a3 {
+    border-radius: 25px 0px 0px 25px;
+    background: purple;
+  }
+  .a4 {
+    border-radius: 25px;
+    background: royalblue;
+  }
+  .a5 {
+    border-radius: 25px 0px 25px 25px;
+    background: green;
+  }
+
+}

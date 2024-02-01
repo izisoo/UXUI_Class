@@ -1,15 +1,18 @@
-const preview = document.querySelector(".preview");
-const toggle = document.querySelector(".toggle");
-const about = document.querySelector(".about")
-const work = document.querySelector(".work")
-const contact = document.querySelector(".contact")
+const sections = document.querySelectorAll(".section");
 
-toggle.addEventListener("click", () => {
-  const isPreviewVisible = getComputedStyle(preview).display !== "none"
+sections.forEach((section) => {
+  const toggle = section.querySelector(".toggle");
+  const preview = section.querySelector(".preview");
 
-  if (isPreviewVisible) {
-    preview.computedStyleMap.display ="none";
-  } else {
-    preview.computedStyleMap.display ="block";
-  }
-})
+  preview.style.display = "none";
+
+  toggle.addEventListener("click", () => {
+    preview.classList.toggle("visible");
+
+    if (preview.classList.contains("visible")) {
+      preview.style.display = "block";
+    } else {
+      preview.style.display = "none";
+    }
+  });
+});

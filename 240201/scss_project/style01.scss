@@ -1,0 +1,46 @@
+@import "reset";
+
+body {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.heart-beat {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: paleturquoise;
+  transform: rotate(45deg);
+  box-shadow: 0 -10px 100px paleturquoise,0 -10px 200px paleturquoise,0 -10px 300px paleturquoise;
+  animation: scale ease-in-out 0.5s infinite;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: 50%;
+  }
+  &::before {
+    top: -50%;
+  }
+  &::after {
+    left: -50%;
+  }
+}
+
+@keyframes scale {
+  0% {
+    scale: 0.9;
+  }
+  80% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.9;
+  }
+  
+}

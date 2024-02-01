@@ -2,9 +2,9 @@
   border: 5px solid slateblue;
   background: rgb(185, 177, 238) ;
   display: grid;
-  grid-template-columns: repeat(4, 1fr) ;
-  grid-template-rows: auto;
-  grid-template-areas: "header header header header" "content content . lnb" "footer footer footer footer" ;
+  grid-template-columns: auto ;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "header content lnb" "header content lnb" "footer footer footer" ;
 }
 .parent div {
   text-align: center;
@@ -19,6 +19,10 @@
 }
 .content {
   grid-area: content;
+}
+.content div {
+  margin: 0;
+  padding: 0;
 }
 .lnb {
   grid-area: lnb;
