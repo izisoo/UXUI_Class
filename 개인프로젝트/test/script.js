@@ -1,10 +1,9 @@
-const sections = document.querySelectorAll(".section");
+const section = document.querySelectorAll(".section");
+console.log(section);
 
-sections.forEach((section) => {
+section.forEach((section) => {
   const toggle = section.querySelector(".toggle");
   const preview = section.querySelector(".preview");
-
-  preview.style.display = "none";
 
   toggle.addEventListener("click", () => {
     preview.classList.toggle("visible");

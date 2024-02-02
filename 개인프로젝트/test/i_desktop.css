@@ -87,10 +87,12 @@ body {
 .header #header .header_ul .header_gnb a {
   margin-left: 20px;
 }
-.header #header .header_ul .header_toggle {
+
+.header_toggle {
   display: none;
 }
-.header #header .header_ul .header_gnb_mo {
+
+.header_gnb_mo {
   display: none;
 }
 
@@ -135,11 +137,11 @@ body {
 }
 
 .section {
-  width: 60%;
+  width: 80%;
   display: grid;
   grid-template-columns: 17% 1fr 17%;
   grid-template-rows: 1fr 1fr auto;
-  grid-template-areas: "number center toggle" "number center toggle" "preview preview preview";
+  grid-template-areas: "number center toggle" "number center toggle" ". preview .";
   justify-content: space-between;
   align-items: center;
   padding: 30px 5%;
@@ -185,48 +187,86 @@ body {
   transform: rotate(90deg);
 }
 .section .preview {
-  width: 100%;
-  height: 100%;
   grid-area: preview;
-  border: 1px solid red;
+  margin-top: 20px;
+}
+
+.about .preview {
+  opacity: 0.8;
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.about .preview #article {
+  margin-top: 10px;
+  color: #ededed;
+}
+
+.work .preview {
+  color: #ededed;
+  font: 300 3em/1 "roslindale";
+  letter-spacing: 2px;
+}
+.work .preview ul li {
+  padding: 20px 20px;
+  background-position: center;
+  border-top: 1px solid #ededed;
+  opacity: 0.5;
+}
+.work .preview ul li:hover {
+  opacity: 1;
+}
+.work .preview ul .list-divider {
+  border-top: 1px solid #ededed;
+  font-size: 2.5rem;
+  padding: 10px 20px;
+  background: #242424;
+  text-align: right;
 }
 
 @media screen and (max-width: 1200px) {
-  .main_text {
+  #main_text {
     width: 780px;
   }
-  .section .content_left {
+  #main_text h1 {
+    font-size: 7em;
+  }
+  .section {
+    width: 80%;
+  }
+  .section .number {
     min-width: 130px;
   }
-  .section .content-center {
-    min-width: 400px;
+  .section .center {
+    min-width: 300px;
   }
 }
-@media screen and (min-width: 390px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header #header {
     width: 85%;
   }
   .header .header_gnb {
     display: none;
   }
-  .header .header_toggle {
+  .header_toggle {
     display: flex;
     flex-direction: column;
     background: transparent;
     border: none;
     justify-content: space-between;
-    z-index: 99;
+    cursor: pointer;
   }
-  .header .header_toggle span {
+  .header_toggle span {
     display: block;
     width: 25px;
     height: 2px;
     background: #ededed;
   }
-  .header .header_toggle span:nth-child(2) {
+  .header_toggle span:nth-child(2) {
     margin: 8px 0;
   }
-  .header .header_gnb_mo {
+  .header_gnb_mo {
     position: absolute;
     top: 0;
     right: 0;
@@ -236,22 +276,22 @@ body {
     background: #ededed;
     padding: 70px 0 600px;
   }
-  .header .header_gnb_mo a {
+  .header_gnb_mo a {
     color: #242424;
     padding: 20px;
     display: block;
     font-weight: bold;
   }
-  .main .main_text {
+  .main #main_text {
     padding: 20px;
-    width: 350px;
+    width: 100%;
   }
-  .main .main_text h1 {
-    font-size: 9em;
+  .main #main_text h1 {
+    font-size: 6em;
     white-space: wrap;
-    text-align: center;
+    text-align: right;
   }
-  .content {
+  .category {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -259,30 +299,32 @@ body {
     justify-content: center;
     padding-bottom: 50px;
   }
-  .content #content {
+  .category #content {
     width: 100%;
     max-width: 780px;
     position: relative;
   }
-}
-.section {
-  width: 100%;
-}
-.section .content- left {
-  min-width: 110px;
-}
-.section .content- left h1 {
-  font-size: 4rem;
-}
-.section .content- center {
-  min-width: 275px;
-  margin: auto 10px;
-}
-.section .content- center h1 {
-  line-height: 0.8;
-  margin-bottom: 5px;
-  font-size: 4em;
-}
-.section .content- right {
-  min-width: 70px;
+  .section {
+    width: 100%;
+    padding: 30px 20px;
+    grid-template-areas: "number center toggle" "number center toggle" "preview preview preview";
+  }
+  .section .number {
+    min-width: 110px;
+  }
+  .section .number h1 {
+    font-size: 4rem;
+  }
+  .section .center {
+    min-width: 275px;
+    margin: auto 10px;
+  }
+  .section .center h1 {
+    line-height: 0.8;
+    margin-bottom: 5px;
+    font-size: 4em;
+  }
+  .section .toggle {
+    min-width: 70px;
+  }
 }/*# sourceMappingURL=i_desktop.css.map */
