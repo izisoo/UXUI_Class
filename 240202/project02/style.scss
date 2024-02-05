@@ -6,42 +6,46 @@
 @import "mixin";
 @import "var";
 
-//common
+/* common */
 body {
   font-family: map-get($font-family, kor);
-  color: map-get($font-color, pc);
+  color: map-get($font-color, primary);
   font-size: map-get($font-size, base);
   background: map-get($bg-color, primary);
 }
 
-//desktop
+/* desktop */
 .portfolio {
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   height: 100vh;
-  background: url("./9/background.png") top center/cover no-repeat;
+  background: url("./img_20240202/9/background.png") top center no-repeat;
   .headline-share {
     margin-bottom: 50px;
     h1 {
       @include wavy-underline;
-      font-family: map-get($font-family, eng);
-      font-size: map-get($font-size, large);
-      text-transform: uppercase;
-      text-align: center;
+      font: {
+        family: map-get($font-family, eng);
+        size: map-get($font-size, large-heading);
+      }
+      text: {
+        transform: uppercase;
+        align: center;
+      }
     }
   }
   .items {
     width: 1280px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-gap: 30px;
     .item {
       &.thum {
         .photo {
           width: 100%;
           height: 400px;
-          box-shadow: 0 15px 45px rgba($color: #000000, $alpha: 0.2);
+          box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
           border-radius: 15px;
           img {
             width: inherit;
@@ -50,16 +54,16 @@ body {
             object-position: top;
             border-radius: 15px;
             transition: all 2s;
-            &:hover {
-              object-position: bottom;
-            }
           }
         }
+        &:hover img {
+          object-position: bottom;
+        }
         .portfolio-title {
-          font-family: map-get($font-family, eng);
           display: block;
           text-align: center;
           margin: 7px;
+          font-family: map-get($font-family, eng);
           .btn-view {
             @include btn-base;
             &.pc {
@@ -72,33 +76,63 @@ body {
         }
       }
     }
-    aside {
+    aside.item {
       b {
+        font-family: map-get($font-family, eng);
         color: map-get($btn-color, pc);
         font-weight: normal;
+        padding-left: 20px;
       }
       h2 {
         font-family: map-get($font-family, eng);
         font-size: 1.6em;
-        margin: 15px 0;
-      }
-      .portfolio-info {
-        margin-top: 10px;
+        margin-top: 15px;
         padding-left: 20px;
-        line-height: 1.4em;
-        span {
-          font-size: 14px;
-          display: list-item;
-        }
       }
       p {
-        padding-left: 0px;
+        margin: 20px;
+      }
+      .portfolio-info {
+        padding-left: 20px;
+        line-height: 1.8em;
+        span {
+          font-size: 12px;
+          display: list-item;
+        }
       }
     }
   }
 }
 
-//tablet
+/* featherlight */
+.featherlight .featherlight-content {
+  margin-left: 0;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+.featherlight .featherlight-inner {
+  // margin-left: 25%;
+  // overflow: hidden;
+  padding-left: 25%;
+  // padding-right: 25%;
+  width: 100%;
+  height: 100%;
+}
+
+.featherlight .featherlight-close-icon {
+  left: 40px;
+  top: 90%;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  color: #fff;
+  border-radius: 50%;
+  background-color: crimson;
+}
+
+/* tablet */
 @media screen and (max-width: 1024px) {
   .portfolio {
     align-content: start;
@@ -106,34 +140,35 @@ body {
     padding: 20px;
     .headline-share {
       h1 {
-        font-size: map-get($font-size, medium);
+        font-size: map-get($font-size, medium-heading);
       }
     }
     .items {
       width: 100%;
       grid-template-columns: repeat(2, 1fr);
       aside.item,
-      .item .thum:nth-child(3) {
+      .item.thum:nth-child(4) {
         grid-column: span 2;
       }
     }
   }
 }
 
-//mobile
+/* mobile */
 @media screen and (max-width: 768px) {
   .portfolio {
     height: auto;
     padding: 20px;
     .headline-share {
       h1 {
-        font-size: map-get($font-size, small); 
+        font-size: map-get($font-size, small-heading);
       }
     }
     .items {
       width: 100%;
       grid-template-columns: repeat(1, 1fr);
-      .item.thum:nth-child(2),.item.thum:nth-child(3) {
+      .item.thum:nth-child(2),
+      .item.thum:nth-child(3) {
         grid-column: span 2;
       }
     }

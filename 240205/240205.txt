@@ -1,0 +1,46 @@
+html5, css, flex & grid, scss
+=> 포트폴리오 양식
+(*제이쿼리! => 페더라이트)
+
+1. 부트스트랩
+2. 퍼블리싱 실전 20개
+3. figma => html, css, jquery
+
+폰트어썸 / 구글 아이콘즈 / 제이쿼리
+
+
+******부트스트랩
+
+<div class="container-fluid">
+
+*문법:
+https://getbootstrap.com/docs/4.2/layout/overview/
+
+grid : figma : 격자 / 
+CSS grid-layout
+
+=> desktop : 레이아웃 그리드 12 : 10과 가까운 숫자 최대 공약수 1920 / 1080 => 12의 배수
+
+col-xl : 1200px 까지
+col-lg : 992px 까지 
+col-md : 768px 까지
+col-sm : 576px 까지
+col : 576px 미만
+
+웹 퍼블리셔 취업 > 로그인 / 메뉴 / 네비게이션 / 클릭 시 발생가능한 이벤트
+
+복수의 옵션을 클릭하게 되었을 때, 매칭되어지는 컨텐츠를 보여줄 수 있도록 하는 jQuery 문법
+
+****
+ <script defer src="./script.js"></script>
+
+
+
+
+
+
+
+
+
+
+

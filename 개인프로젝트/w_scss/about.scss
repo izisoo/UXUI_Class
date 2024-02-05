@@ -1,0 +1,24 @@
+@import "common";
+
+.ellipse {
+  width: 200px;
+  height: 100px;
+  background: none;
+  border-radius: 50%;
+  position: relative;
+  perspective: 1000px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border: 30px solid red;
+    border-radius: 50%;
+    transform-origin: right;
+    transform: rotateY(-20px);
+  }
+}

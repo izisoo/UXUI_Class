@@ -1,0 +1,77 @@
+/*=== var ===*/
+/*=== reset ===*/
+@import url("https://fonts.cdnfonts.com/css/roslindale?styles=147507,147527,147520,147523,147502,147510,147536,147549");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*=== font ===*/
+/* SUIT */
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* h1 {
+  font: normal 5rem/1 "Roslindale";
+  letter-spacing: 2px;
+  color: #ededed;
+}
+* h2 {
+  font: normal 4rem/1 "Roslindale";
+  letter-spacing: 2px;
+  color: #ededed;
+}
+* h3 {
+  font: normal 3rem/1 "Roslindale";
+  letter-spacing: 2px;
+  color: #ededed;
+}
+* h4 {
+  font: normal 2rem/1 "Roslindale";
+  letter-spacing: 2px;
+  color: #ededed;
+}
+* h5 {
+  font-family: "SUIT-Regular";
+  color: #ededed;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.ellipse {
+  width: 200px;
+  height: 100px;
+  background: none;
+  border-radius: 50%;
+  position: relative;
+  perspective: 1000px;
+}
+.ellipse::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border: 30px solid red;
+  border-radius: 50%;
+  transform-origin: right;
+  transform: rotateY(-20px);
+}/*# sourceMappingURL=about.css.map */

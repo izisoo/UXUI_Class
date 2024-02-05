@@ -1,0 +1,99 @@
+@import url("../reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;800&display=swap");
+
+body {
+  height: 100vh;
+  font-family: "Noto Sans KR", sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 1.6rem;
+}
+.wrap {
+  width: 800px;
+}
+
+/* header */
+.header {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.header h1 {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+.header span {
+  color: crimson;
+}
+.header > form {
+  width: 100%;
+}
+.header form input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background: #fff url(./images/search-icon.png) center left / 20px no-repeat ;
+  padding-left: 35px;
+  
+}
+.header form input:focus {
+  outline: none;
+}
+.header form input::placeholder {
+  transition: all 0.3s;
+}
+.header form input:focus::placeholder {
+  opacity: 0;
+}
+
+
+.section {
+  width: 100%;
+}
+
+/* gnb */
+.gnb {
+  overflow: hidden;
+}
+
+.gnb li {
+  float: left;
+  width: 160px;
+  text-align: center;
+  background: #eee;
+  padding: 5px;
+  border-right: 1px solid #ddd;
+  border-top: 2px solid transparent;
+}
+.gnb li:last-child {
+  border-right: none;
+}
+.gnb li:hover,
+.gnb li.active {
+  background: #fff;
+  border-top: 2px solid crimson;
+}
+
+/* contents */
+.contents div {
+  background: #fff;
+  display: none;
+  padding: 20px;
+  overflow: hidden;
+}
+.contents div.active {
+  display: block;
+}
+.contents div h3 {
+  text-align: center;
+}
+.contents div img {
+  float: left;
+  padding: 10px;
+}

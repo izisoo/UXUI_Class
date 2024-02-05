@@ -7,34 +7,7 @@
 }
 
 .header {
-  width: 100%;
-  background: $background;
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  background-blend-mode: multiply;
-  z-index: 1;
-  #header {
-    width: 80%;
-    height: 75px;
-
-    .header_ul {
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font: 300 25px/1 "roslindale";
-      letter-spacing: 2px;
-      color: $primary;
-      .header_gnb {
-        a {
-          margin-left: 20px;
-        }
-      }
-    }
-  }
+  @include header;
 }
 .header_toggle {
   display: none;

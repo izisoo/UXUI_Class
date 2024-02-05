@@ -1,0 +1,53 @@
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+a {
+  color: #222;
+}
+
+body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5rem;
+}
+
+.testimonial-section {
+  width: 800px;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.testimonial-section h1 {
+  font-size: 25px;
+  margin: 10px auto 30px;
+}
+.testimonial-section h1 span {
+  color: crimson;
+}
+.testimonial-pic img {
+  width: 100px;
+  filter: grayscale(1);
+  margin: 5px 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.testimonial-pic img.active {
+  filter: none;
+  border-radius: 100%;
+}
+.testimonial .content.active {
+  display: block;
+}
+.testimonial .content {
+  display: none;
+}
+.testimonial .content p:nth-child(2) {
+  font-weight: bold;
+  margin-top: 10px;
+}

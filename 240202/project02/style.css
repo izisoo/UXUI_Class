@@ -99,4 +99,42 @@ a {
 }
 .portfolio .items aside p {
   padding-left: 0px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .portfolio {
+    align-content: start;
+    height: auto;
+    padding: 20px;
+  }
+  .portfolio .headline-share h1 {
+    font-size: 45px;
+  }
+  .portfolio .items {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio .items aside.item,
+  .portfolio .items .item.thum:nth-child(4) {
+    grid-column: span 2;
+  }
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+  .portfolio {
+    height: auto;
+    padding: 20px;
+  }
+  .portfolio .headline-share h1 {
+    font-size: 20px;
+  }
+  .portfolio .items {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio .items .item.thum:nth-child(2),
+  .portfolio .items .item.thum:nth-child(3) {
+    grid-column: span 2;
+  }
+}/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

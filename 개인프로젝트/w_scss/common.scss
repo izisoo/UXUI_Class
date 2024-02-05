@@ -1,3 +1,59 @@
+// mixin
+@mixin header {
+  width: 100%;
+  background: $background;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-blend-mode: multiply;
+  z-index: 1;
+  #header {
+    width: 80%;
+    height: 75px;
+
+    .header_ul {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font: 300 25px/1 "roslindale";
+      letter-spacing: 2px;
+      color: $primary;
+      .header_gnb {
+        a {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@mixin footer {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  .footer_text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    span {
+      position: absolute;
+      left: 50%;
+      font-size: 1rem;
+      transform-origin: 0 100px;
+    }
+  }
+}
+
+
+
+
+
+
+
 /*=== var ===*/
 $background: #070b16;
 $primary: #ededed;
@@ -61,3 +117,6 @@ body {
   width: 100%;
   height: 100%;
 }
+
+
+
