@@ -1,24 +1,37 @@
 @import "common";
 
-.ellipse {
-  width: 200px;
-  height: 100px;
-  background: none;
-  border-radius: 50%;
-  position: relative;
-  perspective: 1000px;
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: $background;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    background: #fff;
-    border: 30px solid red;
-    border-radius: 50%;
-    transform-origin: right;
-    transform: rotateY(-20px);
+.header {
+  @include header;
+}
+.footer {
+  @include footer;
+}
+
+
+//article
+article {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+//careers
+.carrers {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .graphic {
+
   }
+  .carrer
 }

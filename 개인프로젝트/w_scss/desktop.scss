@@ -6,6 +6,7 @@
   background: $background;
 }
 
+//header
 .header {
   @include header;
 }
@@ -15,6 +16,8 @@
 .header_gnb_mo {
   display: none;
 }
+
+//main
 .main {
   width: 100%;
   height: 75vh;
@@ -47,6 +50,7 @@
   }
 }
 
+//category
 .category {
   display: flex;
   flex-direction: column;
@@ -57,7 +61,7 @@
   display: grid;
   grid-template-columns: 17% 1fr 17%;
   grid-template-rows: 1fr 1fr auto;
-  grid-template-areas: "number center toggle" "number center toggle" ". preview .";
+  grid-template-areas: "number center toggle" "number center toggle" ". preview preview";
   justify-content: space-between;
   align-items: center;
   padding: 30px 5%;
@@ -82,10 +86,6 @@
     grid-area: center;
     text-align: right;
     margin-right: 20px;
-    h2,
-    h5 {
-      // border: 1px solid red;
-    }
   }
   .toggle {
     grid-area: toggle;
@@ -131,6 +131,7 @@
   color: $primary;
   font: 300 3em/1 "roslindale";
   letter-spacing: 2px;
+  margin-right: 15%;
   ul {
     li {
       padding: 20px 20px;
@@ -149,6 +150,11 @@
       text-align: right;
     }
   }
+}
+
+//footer
+.footer {
+  @include footer;
 }
 
 // tablet
@@ -179,38 +185,38 @@
     .header_gnb {
       display: none;
     }
-  }
-  .header_toggle {
-    display: flex;
-    flex-direction: column;
-    background: transparent;
-    border: none;
-    justify-content: space-between;
-    cursor: pointer;
-    span {
-      display: block;
-      width: 25px;
-      height: 2px;
-      background: $primary;
+    .header_toggle {
+      display: flex;
+      flex-direction: column;
+      background: transparent;
+      border: none;
+      justify-content: space-between;
+      cursor: pointer;
+      span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: $primary;
+      }
+      span:nth-child(2) {
+        margin: 8px 0;
+      }
     }
-    span:nth-child(2) {
-      margin: 8px 0;
-    }
-  }
-  .header_gnb_mo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-    flex-direction: column;
-    width: 40%;
-    background: #ededed;
-    padding: 70px 0 600px;
-    a {
-      color: #242424;
-      padding: 20px;
-      display: block;
-      font-weight: bold;
+    .header_gnb_mo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+      flex-direction: column;
+      width: 40%;
+      background: #ededed;
+      padding: 70px 0 600px;
+      a {
+        color: #242424;
+        padding: 20px;
+        display: block;
+        font-weight: bold;
+      }
     }
   }
 
@@ -242,7 +248,7 @@
 
   .section {
     width: 100%;
-    padding: 30px 20px;
+    padding: 30px 0;
     grid-template-areas: "number center toggle" "number center toggle" "preview preview preview";
     .number {
       min-width: 110px;
@@ -263,5 +269,26 @@
       min-width: 70px;
     }
   }
+  .work .preview {
+    font: 300 3em/1 "roslindale";
+    margin-right: 0;
+    ul {
+      li {
+        padding: 20px 20px;
+        background-position: center;
+        border-top: 1px solid $primary;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .list-divider {
+        border-top: 1px solid $primary;
+        font-size: 2.5rem;
+        padding: 10px 40px;
+        background: #242424;
+        text-align: right;
+      }
+    }
+  }
 }
-

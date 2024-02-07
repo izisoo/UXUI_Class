@@ -50,28 +50,100 @@ a {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   width: 100%;
   height: 100%;
 }
 
-.ellipse {
-  width: 200px;
-  height: 100px;
-  background: none;
-  border-radius: 50%;
-  position: relative;
-  perspective: 1000px;
-}
-.ellipse::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
+.wrap {
+  width: 100%;
   height: 100%;
-  background: #fff;
-  border: 30px solid red;
+  background: #070b16;
+}
+
+.header {
+  width: 100%;
+  background: #070b16;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-blend-mode: multiply;
+  z-index: 1;
+}
+.header #header {
+  width: 80%;
+  height: 75px;
+}
+.header #header .header_ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 300 25px/1 "roslindale";
+  letter-spacing: 2px;
+  color: #ededed;
+}
+.header #header .header_ul .header_gnb a {
+  margin-left: 20px;
+}
+.header #header .header_ul .header_toggle {
+  display: none;
+}
+.header #header .header_ul .header_gnb_mo {
+  display: none;
+}
+
+.footer {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  transform-origin: right;
-  transform: rotateY(-20px);
+  position: fixed;
+  left: 5%;
+  bottom: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .logo {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #ff4d00;
+  border-radius: 50%;
+}
+.footer .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  color: #ff4d00;
+  animation: rotateText 10% linear infinite;
+  letter-spacing: 1px;
+}
+.footer .text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1rem;
+  transform-origin: 0 75px;
+}
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.carrers {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }/*# sourceMappingURL=about.css.map */

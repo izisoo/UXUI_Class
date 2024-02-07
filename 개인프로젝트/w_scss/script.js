@@ -19,8 +19,8 @@ section.forEach((section) => {
 
 
 // footer
-const text = document.querySelector(".footer_text");
-text.innerHTML = text.innerText.split("").map(
+const text = document.querySelector('.text p');
+text.innerHTML = text.innerText.split('').map(
   (char, i) =>
-  '<span style= "transform:rotate(${i *5)deg">izisoo</span>'
-).join("");
+  `<span style= "transform:rotate(${i * 6}deg)">${char}</span>`
+).join('');

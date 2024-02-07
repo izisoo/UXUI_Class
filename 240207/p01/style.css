@@ -1,0 +1,100 @@
+/* reset css */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  color: #222;
+}
+body section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body section article {
+  width: 980px;
+  height: 500px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.heading span {
+  color: crimson;
+  font-size: 24px;
+}
+.heading h1 {
+  font-size: 36px;
+  margin-top: 10px;
+}
+.heading h1 em {
+  font-style: normal;
+  position: relative;
+}
+.heading h1 em::after {
+  content: url("./images/logo-kakao.png");
+  position: absolute;
+  top: -26px;
+  right: -33px;
+}
+
+.content {
+  overflow: hidden;
+}
+.content .accordian .title {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  padding-left: 15px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.content .accordian .title::after {
+  content: "\f105";
+  font-family: fontawesome;
+  float: right;
+}
+.content .accordian .title.active::after {
+  transform: rotate(90deg);
+  color: orange;
+}
+.content .accordian .title:hover, .content .accordian .title.active {
+  background: #203049;
+  color: #fff;
+}
+.content .accordian .desc {
+  padding: 15px;
+  display: none;
+}
+.content .accordian .desc.active {
+  display: block;
+}
+.content .image {
+  text-align: right;
+}
+.content .image img {
+  height: 370px;
+}
+
+.content > div {
+  width: 50%;
+  height: 400px;
+  float: left;
+}/*# sourceMappingURL=style.css.map */
