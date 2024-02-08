@@ -24,29 +24,27 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+* {
+  color: #ededed;
+}
 * h1 {
   font: normal 5rem/1 "Roslindale";
   letter-spacing: 2px;
-  color: #ededed;
 }
 * h2 {
   font: normal 4rem/1 "Roslindale";
   letter-spacing: 2px;
-  color: #ededed;
 }
 * h3 {
   font: normal 3rem/1 "Roslindale";
   letter-spacing: 2px;
-  color: #ededed;
 }
 * h4 {
-  font: normal 2rem/1 "Roslindale";
+  font: normal 1.5rem/1 "Roslindale";
   letter-spacing: 2px;
-  color: #ededed;
 }
 * h5 {
   font-family: "SUIT-Regular";
-  color: #ededed;
 }
 
 body {
@@ -62,11 +60,16 @@ body {
   width: 100%;
   height: 100%;
   background: #070b16;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
   width: 100%;
   background: #070b16;
+  opacity: 0.9;
   position: fixed;
   left: 0;
   top: 0;
@@ -76,6 +79,7 @@ body {
   z-index: 1;
 }
 .header #header {
+  opacity: 1;
   width: 80%;
   height: 75px;
 }
@@ -109,13 +113,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.footer .logo {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  background: #ff4d00;
-  border-radius: 50%;
-}
 .footer .text {
   position: absolute;
   left: 50%;
@@ -124,8 +121,16 @@ body {
   width: 100%;
   height: 100%;
   color: #ff4d00;
-  animation: rotateText 10% linear infinite;
+  animation: rotateText 10s linear infinite;
   letter-spacing: 1px;
+}
+.footer .text .logo {
+  position: absolute;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0.5;
 }
 .footer .text span {
   position: absolute;
@@ -142,8 +147,95 @@ body {
   }
 }
 
-.carrers {
+article {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 150px;
+  border: 1px solid red;
+}
+article h1 {
+  font-size: 4rem;
+  text-align: left;
+  margin-bottom: 30px;
+}
+article .sub_title h4 {
+  margin-top: 20px;
+  opacity: 0.7;
+  font-size: 2em;
+}
+article .sub_title p {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.careers {
+  width: 80%;
+  height: 1200px;
+  border: 1px solid red;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.careers .career {
+  width: 50%;
+  height: 100%;
+  border: 1px solid red;
+  z-index: 10;
+  position: absolute;
+  top: 15%;
+}
+.careers .career .company {
+  margin-bottom: 50px;
+}
+.careers .career .company div {
+  text-align: right;
+}
+.careers .career .company div span {
+  opacity: 0.6;
+  letter-spacing: 0.5px;
+}
+.careers .career .company div h3 {
+  white-space: nowrap;
+  padding: 7px 0 15px;
+}
+.careers .career .company div h4 {
+  text-align: left;
+  white-space: nowrap;
+  padding-bottom: 8px;
+  color: rgb(186, 170, 223);
+}
+.careers .career .company div p {
+  text-align: left;
+}
+.careers .graphic {
   width: 100%;
   height: 100%;
+  background: #070b16;
   position: relative;
+}
+.careers .graphic .ellipse {
+  position: absolute;
+  left: 20%;
+  width: 600px;
+  height: 1000px;
+  border-radius: 50%;
+  transform: rotate(30deg);
+}
+.careers .graphic .gradient1 {
+  border-width: 3px;
+  border-style: solid;
+  -o-border-image: linear-gradient(30deg, #070b16 70%, #7e7e7e 85%, #ff4d00 100%);
+     border-image: linear-gradient(30deg, #070b16 70%, #7e7e7e 85%, #ff4d00 100%);
+  z-index: 99;
+}
+
+@media screen and (max-width: 1200px) {
+  .careers .career .company div h4 {
+    white-space: wrap;
+  }
 }/*# sourceMappingURL=about.css.map */

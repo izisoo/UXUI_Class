@@ -1,0 +1,17 @@
+1. page scroll effect = velocity.js
+> 개인 프로젝트 ㅇㅋ
+> 커스텀 어려움
+> 개인포폴 ㄴ
+
+2.scrollTo
+
+3.slick slider
+
+4.feather light
+
+5.custom
+
+>1) Vanilla JS > plug in
+-Vanilla JS / 3~4개월
+
+> 2) 유니크한 plug in

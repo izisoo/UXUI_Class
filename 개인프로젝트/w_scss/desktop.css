@@ -24,29 +24,27 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+* {
+  color: #ededed;
+}
 * h1 {
   font: normal 5rem/1 "Roslindale";
   letter-spacing: 2px;
-  color: #ededed;
 }
 * h2 {
   font: normal 4rem/1 "Roslindale";
   letter-spacing: 2px;
-  color: #ededed;
 }
 * h3 {
   font: normal 3rem/1 "Roslindale";
   letter-spacing: 2px;
-  color: #ededed;
 }
 * h4 {
-  font: normal 2rem/1 "Roslindale";
+  font: normal 1.5rem/1 "Roslindale";
   letter-spacing: 2px;
-  color: #ededed;
 }
 * h5 {
   font-family: "SUIT-Regular";
-  color: #ededed;
 }
 
 body {
@@ -67,6 +65,7 @@ body {
 .header {
   width: 100%;
   background: #070b16;
+  opacity: 0.9;
   position: fixed;
   left: 0;
   top: 0;
@@ -76,6 +75,7 @@ body {
   z-index: 1;
 }
 .header #header {
+  opacity: 1;
   width: 80%;
   height: 75px;
 }
@@ -251,8 +251,9 @@ body {
   position: absolute;
   width: 80px;
   height: 80px;
-  background: #ff4d00;
+  background: #ededed;
   border-radius: 50%;
+  opacity: 0.5;
 }
 .footer .text {
   position: absolute;
@@ -262,7 +263,7 @@ body {
   width: 100%;
   height: 100%;
   color: #ff4d00;
-  animation: rotateText 10% linear infinite;
+  animation: rotateText 10s linear infinite;
   letter-spacing: 1px;
 }
 .footer .text span {
