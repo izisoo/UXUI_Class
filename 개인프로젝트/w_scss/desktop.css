@@ -247,14 +247,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.footer .logo {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  background: #ededed;
-  border-radius: 50%;
-  opacity: 0.5;
-}
 .footer .text {
   position: absolute;
   left: 50%;
@@ -265,6 +257,14 @@ body {
   color: #ff4d00;
   animation: rotateText 10s linear infinite;
   letter-spacing: 1px;
+}
+.footer .text .logo {
+  position: absolute;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0.5;
 }
 .footer .text span {
   position: absolute;
