@@ -19,9 +19,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font: 300 25px/1 "roslindale";
       letter-spacing: 2px;
       color: $primary;
+      li {
+        font: 300 25px/1 "roslindale";
+      }
       .header_gnb {
         a {
           margin-left: 20px;
@@ -42,7 +44,7 @@
   height: 150px;
   border-radius: 50%;
   position: fixed;
-  left: 5%;
+  left: 0%;
   bottom: 15%;
   display: flex;
   justify-content: center;

@@ -47,15 +47,15 @@ article {
 //careers
 .careers {
   width: 80%;
-  height: 100%;
+  height: auto;
   background: $background;
-  margin: 0 auto;
+  margin: 0px auto;
   overflow: hidden;
-  margin-top: 0px;
+  margin-top: 20px;
   position: relative;
   .graphic {
     width: 100%;
-    height: 800px;
+    height: 700px;
     background: $background;
     overflow: hidden;
     border: 1px solid red;
@@ -83,24 +83,24 @@ article {
     }
     .gradient2 {
       background-image: linear-gradient(#070b16, #070b16),
-        linear-gradient(40deg, #070b16 70%, #353535 80%, #ff4d00 88%);
+        linear-gradient(40deg, #070b16 70%, #353535 80%, #ff4d00 85%);
     }
     .gradient3 {
       background-image: linear-gradient(#070b16, #070b16),
-        linear-gradient(50deg, #070b16 70%, #353535 80%, #ff4d00 87%);
+        linear-gradient(50deg, #070b16 70%, #353535 75%, #ff4d00 80%);
     }
     .gradient4 {
       background-image: linear-gradient(#070b16, #070b16),
-        linear-gradient(60deg, #070b16 70%, #353535 80%, #ff4d00 86%);
+        linear-gradient(60deg, #070b16 65%, #353535 70%, #ff4d00 80%);
     }
     .gradient5 {
       background-image: linear-gradient(#070b16, #070b16),
-        linear-gradient(70deg, #070b16 70%, #353535 80%, #ff4d00 85%);
+        linear-gradient(70deg, #070b16 65%, #353535 73%, #ff4d00 85%);
     }
   }
   .career {
     width: 50%;
-    height: 500px;
+    height: auto;
     border: 1px solid red;
     z-index: 10;
     position: absolute;
@@ -111,9 +111,11 @@ article {
       display: none;
       transition: opacity 0.5s;
       margin-bottom: 50px;
+      overflow: hidden;
       &.show {
         display: block;
         opacity: 1;
+        animation-fill-mode: both;
       }
       div {
         text-align: right;
@@ -151,8 +153,18 @@ article {
   }
   //careers
   .careers {
+    margin-top: 50px;
+    overflow-y: hidden;
+    .graphic {
+      .ellipse {
+        width: 250px;
+        height: 70%;
+        right: 10%;
+      }
+    }
     .career {
       width: 60%;
+      right: 15%;
       .company {
         div {
           h4 {
@@ -167,8 +179,16 @@ article {
 // mobile
 @media screen and (max-width: 768px) {
   .careers {
+    .graphic {
+      .ellipse {
+        width: 250px;
+        right: 14%;
+      }
+    }
     .career {
       width: 80%;
+      left: 0;
+      height: auto;
     }
   }
 }

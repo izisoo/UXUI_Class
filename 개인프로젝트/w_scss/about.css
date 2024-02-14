@@ -88,9 +88,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font: 300 25px/1 "roslindale";
   letter-spacing: 2px;
   color: #ededed;
+}
+.header #header .header_ul li {
+  font: 300 25px/1 "roslindale";
 }
 .header #header .header_ul .header_gnb a {
   margin-left: 20px;
@@ -107,7 +109,7 @@ body {
   height: 150px;
   border-radius: 50%;
   position: fixed;
-  left: 5%;
+  left: 0%;
   bottom: 15%;
   display: flex;
   justify-content: center;
@@ -173,16 +175,16 @@ article .sub_title p {
 
 .careers {
   width: 80%;
-  height: 100%;
+  height: auto;
   background: #070b16;
-  margin: 0 auto;
+  margin: 0px auto;
   overflow: hidden;
-  margin-top: 0px;
+  margin-top: 20px;
   position: relative;
 }
 .careers .graphic {
   width: 100%;
-  height: 800px;
+  height: 700px;
   background: #070b16;
   overflow: hidden;
   border: 1px solid red;
@@ -209,20 +211,20 @@ article .sub_title p {
   background-image: linear-gradient(#070b16, #070b16), linear-gradient(30deg, #070b16 70%, #353535 80%, #ff4d00 90%);
 }
 .careers .graphic .gradient2 {
-  background-image: linear-gradient(#070b16, #070b16), linear-gradient(40deg, #070b16 70%, #353535 80%, #ff4d00 88%);
+  background-image: linear-gradient(#070b16, #070b16), linear-gradient(40deg, #070b16 70%, #353535 80%, #ff4d00 85%);
 }
 .careers .graphic .gradient3 {
-  background-image: linear-gradient(#070b16, #070b16), linear-gradient(50deg, #070b16 70%, #353535 80%, #ff4d00 87%);
+  background-image: linear-gradient(#070b16, #070b16), linear-gradient(50deg, #070b16 70%, #353535 75%, #ff4d00 80%);
 }
 .careers .graphic .gradient4 {
-  background-image: linear-gradient(#070b16, #070b16), linear-gradient(60deg, #070b16 70%, #353535 80%, #ff4d00 86%);
+  background-image: linear-gradient(#070b16, #070b16), linear-gradient(60deg, #070b16 65%, #353535 70%, #ff4d00 80%);
 }
 .careers .graphic .gradient5 {
-  background-image: linear-gradient(#070b16, #070b16), linear-gradient(70deg, #070b16 70%, #353535 80%, #ff4d00 85%);
+  background-image: linear-gradient(#070b16, #070b16), linear-gradient(70deg, #070b16 65%, #353535 73%, #ff4d00 85%);
 }
 .careers .career {
   width: 50%;
-  height: 500px;
+  height: auto;
   border: 1px solid red;
   z-index: 10;
   position: absolute;
@@ -234,10 +236,12 @@ article .sub_title p {
   display: none;
   transition: opacity 0.5s;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 .careers .career .company.show {
   display: block;
   opacity: 1;
+  animation-fill-mode: both;
 }
 .careers .career .company div {
   text-align: right;
@@ -264,15 +268,31 @@ article .sub_title p {
   article .sub_title p {
     width: 100%;
   }
+  .careers {
+    margin-top: 50px;
+    overflow-y: hidden;
+  }
+  .careers .graphic .ellipse {
+    width: 250px;
+    height: 70%;
+    right: 10%;
+  }
   .careers .career {
     width: 60%;
+    right: 15%;
   }
   .careers .career .company div h4 {
     white-space: wrap;
   }
 }
 @media screen and (max-width: 768px) {
+  .careers .graphic .ellipse {
+    width: 250px;
+    right: 14%;
+  }
   .careers .career {
     width: 80%;
+    left: 0;
+    height: auto;
   }
 }/*# sourceMappingURL=about.css.map */
