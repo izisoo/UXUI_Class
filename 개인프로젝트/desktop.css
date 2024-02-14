@@ -158,7 +158,6 @@ content {
   flex: 1;
   justify-content: right;
   align-items: center;
-  /* border: 1px solid red; */
   position: relative;
 }
 .content-right button:hover {

@@ -60,6 +60,8 @@ body {
   width: 100%;
   height: 100%;
   background: #070b16;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,7 +158,6 @@ article {
   flex-direction: column;
   justify-content: left;
   margin-top: 150px;
-  border: 1px solid red;
 }
 article h1 {
   font-size: 4rem;
@@ -176,18 +177,17 @@ article .sub_title p {
 .careers {
   width: 80%;
   height: auto;
-  background: #070b16;
+  background: transparent;
   margin: 0px auto;
-  overflow: hidden;
   margin-top: 20px;
   position: relative;
+  overflow-y: hidden;
 }
 .careers .graphic {
   width: 100%;
   height: 700px;
-  background: #070b16;
+  background: transparent;
   overflow: hidden;
-  border: 1px solid red;
   position: relative;
 }
 .careers .graphic .ellipse {
@@ -225,11 +225,10 @@ article .sub_title p {
 .careers .career {
   width: 50%;
   height: auto;
-  border: 1px solid red;
   z-index: 10;
   position: absolute;
   top: 15%;
-  right: 10%;
+  right: 20%;
   overflow: hidden;
 }
 .careers .career .company {
@@ -279,7 +278,7 @@ article .sub_title p {
   }
   .careers .career {
     width: 60%;
-    right: 15%;
+    right: 30%;
   }
   .careers .career .company div h4 {
     white-space: wrap;

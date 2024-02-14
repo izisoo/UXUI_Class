@@ -84,9 +84,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font: 300 25px/1 "roslindale";
   letter-spacing: 2px;
   color: #ededed;
+}
+.header #header .header_ul li {
+  font: 300 25px/1 "roslindale";
 }
 .header #header .header_ul .header_gnb a {
   margin-left: 20px;
@@ -241,8 +243,8 @@ body {
   height: 150px;
   border-radius: 50%;
   position: fixed;
-  left: 5%;
-  bottom: 15%;
+  left: 0%;
+  bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: center;

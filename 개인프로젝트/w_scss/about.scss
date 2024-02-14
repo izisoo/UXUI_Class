@@ -4,6 +4,7 @@
   width: 100%;
   height: 100%;
   background: $background;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +26,7 @@ article {
   flex-direction: column;
   justify-content: left;
   margin-top: 150px;
-  border: 1px solid red;
+  // border: 1px solid red;
   h1 {
     font-size: 4rem;
     text-align: left;
@@ -48,17 +49,17 @@ article {
 .careers {
   width: 80%;
   height: auto;
-  background: $background;
+  background: transparent;
   margin: 0px auto;
-  overflow: hidden;
   margin-top: 20px;
   position: relative;
+  overflow-y: hidden;
   .graphic {
     width: 100%;
     height: 700px;
-    background: $background;
+    background: transparent;
     overflow: hidden;
-    border: 1px solid red;
+    // border: 1px solid red;
     position: relative;
     .ellipse {
       display: none;
@@ -101,11 +102,11 @@ article {
   .career {
     width: 50%;
     height: auto;
-    border: 1px solid red;
+    // border: 1px solid red;
     z-index: 10;
     position: absolute;
     top: 15%;
-    right: 10%;
+    right: 20%;
     overflow: hidden;
     .company {
       display: none;
@@ -164,7 +165,7 @@ article {
     }
     .career {
       width: 60%;
-      right: 15%;
+      right: 30%;
       .company {
         div {
           h4 {
