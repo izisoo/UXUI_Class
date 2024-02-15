@@ -37,3 +37,5 @@ public
 8. code > public 폴더 > 404.html,index.html 삭제
 
 9. public 폴더안에 사용된 모든 파일 넣기
+
+10. public > index 를 열어서 제대로 작동하는지 확인하기
