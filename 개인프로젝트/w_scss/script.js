@@ -1,3 +1,4 @@
+//toggle
 const section = document.querySelectorAll(".section");
 console.log(section);
 
@@ -16,44 +17,38 @@ section.forEach((section) => {
   });
 });
 
+const toggle = document.querySelector(".header_toggle");
+const preview = document.querySelector(".header_gnb_mo");
+
+toggle.addEventListener("click", () => {
+  preview.classList.toggle("visible");
+});
 //cursor
-// document.addEventListener("mousemove", function (e) {
-//   let cursor = document.getElementById("custom-cursor");
-//   cursor.style.display = "block";
 
-//   cursor.style.left = e.pageX + "px";
-//   cursor.style.top = e.pageY + "px";
+let worklists = document.querySelectorAll(".worklist");
 
-//   let element = document.elementFromPoint(e.clientX, e.clientY);
-//   let id = element.id;
+worklists.forEach(function (worklist) {
+  let cursorimg = "";
+  switch (worklist.id) {
+    case "w_Graphic":
+      cursorimg = "graphic.png";
+      break;
+    case "w_Branding":
+      cursorimg = "branding.png";
+      break;
+    case "w_Edit":
+      cursorimg = "edit.png";
+      break;
+    case "w_Media":
+      cursorimg = "media.png";
+      break;
+    case "w_Web":
+      cursorimg = "w_mobile.png";
+      break;
+    default:
+      cursorimg = "";
+      break;
+  }
 
-//   switch (id) {
-//     case "w_Graphic":
-//       cursor.querySelector("img").src = "./img/graphic.png";
-//       break;
-//     case "w_Branding":
-//       cursor.querySelector("img").src = "./img/brand.png";
-//       break;
-//     case "w_Edit":
-//       cursor.querySelector("img").src = "./img/edit.png";
-//       break;
-//     case "w_Media":
-//       cursor.querySelector("img").src = "./img/media.png";
-//       break;
-//     case "w_Web":
-//       cursor.querySelector("img").src = "./img/uxui.png";
-//       break;
-//     default:
-//       cursor.style.display = "none";
-//   }
-// });
-
-// footer
-const text = document.querySelector(".logo p");
-text.innerHTML = text.innerText
-  .split("")
-  .map(
-    (char, i) =>
-      `<text style= "transform:rotate(${i * 14.5}deg)">${char}</text>`
-  )
-  .join("");
+  worklist.style.cursor = "url('./img/" + cursorimg + "') 0 0 , auto";
+});

@@ -1,0 +1,384 @@
+@import "common.scss";
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: $background;
+  overflow: hidden;
+}
+
+//header
+.header {
+  @include header();
+}
+.header_toggle {
+  display: none;
+}
+.header_gnb_mo {
+  display: none;
+}
+
+//main
+.main {
+  width: 100%;
+  height: 75vh;
+  background: $background;
+  position: relative;
+  overflow: hidden;
+  #main_img {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+      opacity: 0.7;
+    }
+  }
+  #main_text {
+    position: absolute;
+    width: 1280px;
+    margin: 0 auto;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 40%);
+    h1 {
+      text-align: center;
+      color: $accent;
+      font: 200 10em/1 "roslindale";
+    }
+  }
+}
+
+//category
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 17% 1fr 17%;
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-areas: "number center toggle" "number center toggle" ". preview preview";
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 5%;
+  gap: 2%;
+  border-top: 1px solid $primary;
+  &:last-child {
+    border-bottom: 1px solid $primary;
+    margin-bottom: 50px;
+  }
+  .number {
+    min-width: 125px;
+    // border: 1px solid red;
+    display: flex;
+    align-items: baseline;
+    grid-area: number;
+    margin-right: 20px;
+
+    div {
+      width: 30px;
+      height: 2px;
+      background: $primary;
+      padding-left: 5px;
+    }
+  }
+  .center {
+    grid-area: center;
+    text-align: right;
+    margin-right: 20px;
+  }
+  .toggle {
+    grid-area: toggle;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    // border: 1px solid red;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    div {
+      position: absolute;
+      width: 50px;
+      height: 1px;
+      background: $primary;
+    }
+    div:first-child {
+      transform: rotate(90deg);
+    }
+  }
+  .preview {
+    grid-area: preview;
+    margin-top: 20px;
+    display: none;
+  }
+}
+
+.about .preview {
+  width: 100%;
+  max-height: 400px;
+  text-overflow: ellipsis;
+  h3 {
+    opacity: 0.85;
+  }
+  #article {
+    opacity: 0.7;
+    margin-top: 10px;
+    color: $primary;
+  }
+  #go-about {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 1px solid #ededed;
+    border-radius: 50px;
+    opacity: 0.6;
+    margin: 30px 0 10px;
+    &:hover {
+      background: transparent;
+      opacity: 1;
+      border: 1px solid #ff4d00;
+      color: #ff4d00;
+      font-weight: bold;
+    }
+  }
+}
+
+.work .preview {
+  color: $primary;
+  font: 300 3em/1 "roslindale";
+  letter-spacing: 2px;
+  margin-right: 15%;
+  ul {
+    li {
+      padding: 40px 20px;
+      background-position: center;
+      opacity: 0.5;
+      border-bottom: 1px dashed $primary;
+      &:hover {
+        color: $accent;
+        opacity: 1;
+        border-top: 1px solid $primary;
+        border-bottom: 1px solid $primary;
+      }
+      a {
+        pointer-events: none;
+      }
+    }
+    .list-divider {
+      font-size: 2rem;
+      padding: 20px;
+      background: #242424;
+      text-align: right;
+      border: none;
+      &:hover {
+        color: $primary;
+        opacity: 0.5;
+        border: none;
+      }
+      &:first-child li {
+        margin-top: 20px;
+      }
+      #w_Web {
+        border-bottom: 2px solid $primary;
+      }
+    }
+    #w_Media {
+      border-bottom: none;
+      &:hover {
+        border-bottom: 1px solid $primary;
+      }
+    }
+    #w_Web {
+      border: none;
+      &:hover {
+        border-top: 1px solid $primary;
+        border-bottom: 1px solid $primary;
+      }
+    }
+  }
+}
+.contact .preview {
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, 0%);
+  background: transparent;
+  text-align: center;
+  margin-top: 50px;
+  #contact_to_me {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 1px solid #ededed;
+    border-radius: 50px;
+    opacity: 0.6;
+    &:hover {
+      background: transparent;
+      opacity: 1;
+      border: 1px solid #ff4d00;
+      color: #ff4d00;
+      font-weight: bold;
+    }
+  }
+}
+
+//footer
+.footer {
+  @include footer;
+}
+
+// tablet
+@media screen and (max-width: 1200px) {
+  #main_text {
+    width: 780px;
+    h1 {
+      font-size: 7em;
+    }
+  }
+  .section {
+    width: 80%;
+    .number {
+      min-width: 130px;
+    }
+    .center {
+      min-width: 300px;
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 768px) {
+  .header {
+    #header {
+      width: 85%;
+    }
+    .header_gnb {
+      display: none;
+    }
+    .header_toggle {
+      display: flex;
+      flex-direction: column;
+      background: transparent;
+      border: none;
+      justify-content: space-between;
+      cursor: pointer;
+      span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: $primary;
+      }
+      span:nth-child(2) {
+        margin: 8px 0;
+      }
+    }
+    .header_gnb_mo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      flex-direction: column;
+      width: 40%;
+      background: #ededed;
+      padding: 70px 0 600px;
+      a {
+        color: #242424;
+        padding: 20px;
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .main {
+    #main_text {
+      padding: 20px;
+      width: 100%;
+      h1 {
+        font-size: 6em;
+        white-space: wrap;
+        text-align: right;
+      }
+    }
+  }
+
+  .category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    #content {
+      width: 100%;
+      max-width: 780px;
+      position: relative;
+    }
+  }
+
+  .section {
+    width: 100%;
+    padding: 30px 0;
+    grid-template-areas: "number center toggle" "number center toggle" "preview preview preview";
+    .number {
+      padding-left: 15%;
+      min-width: 110px;
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    .center {
+      min-width: 275px;
+      margin: auto 10px;
+      h1 {
+        line-height: 0.8;
+        margin-bottom: 5px;
+        font-size: 4em;
+      }
+    }
+    .toggle {
+      min-width: 70px;
+      padding-right: 15%;
+    }
+  }
+  .about .preview {
+    padding: 0 5%;
+  }
+  .work .preview {
+    font: 300 3em/1 "roslindale";
+    margin-right: 0;
+    ul {
+      li {
+        padding: 20px 20px;
+        background-position: center;
+        border-top: 1px solid $primary;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .list-divider {
+        border-top: 1px solid $primary;
+        font-size: 2.5rem;
+        padding: 10px 40px;
+        background: #242424;
+        text-align: right;
+      }
+    }
+  }
+  .contact .preview {
+    padding-left: 48%;
+  }
+}

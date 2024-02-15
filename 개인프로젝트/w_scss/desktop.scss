@@ -4,11 +4,12 @@
   width: 100%;
   height: 100%;
   background: $background;
+  overflow: hidden;
 }
 
 //header
 .header {
-  @include header;
+  @include header();
 }
 .header_toggle {
   display: none;
@@ -64,9 +65,13 @@
   grid-template-areas: "number center toggle" "number center toggle" ". preview preview";
   justify-content: space-between;
   align-items: center;
-  padding: 30px 5%;
+  padding: 40px 5%;
   gap: 2%;
   border-top: 1px solid $primary;
+  &:last-child {
+    border-bottom: 1px solid $primary;
+    margin-bottom: 50px;
+  }
   .number {
     min-width: 125px;
     // border: 1px solid red;
@@ -113,14 +118,12 @@
     grid-area: preview;
     margin-top: 20px;
     display: none;
-    // border: 1px solid red;
   }
 }
 
 .about .preview {
   width: 100%;
   max-height: 400px;
-  overflow: hidden;
   text-overflow: ellipsis;
   h3 {
     opacity: 0.85;
@@ -149,114 +152,15 @@
     }
   }
 }
-// #custom-cursor {
-//   position: fixed;
-//   pointer-events: none;
-//   z-index: 1000;
-//   display: none;
-//   img {
-//     position: absolute;
-//     width: 100px;
-//     height: 100px;
-//     transform: translate(50%, 50%) rotate(-45deg);
-//   }
-// }
+
 .work .preview {
   color: $primary;
   font: 300 3em/1 "roslindale";
   letter-spacing: 2px;
   margin-right: 15%;
   ul {
-    #w_Graphic {
-      cursor: url("./img/graphic.png") 80 80, auto;
-    }
-    // #w_Graphic::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 50%;
-    //   left: 50%;
-    //   transform: translate(-50%, -50%);
-    //   width: 100px;
-    //   height: 100px;
-    //   background-image: url("./img/graphic.png");
-    //   background-size: cover;
-    //   z-index: 100;
-    //   pointer-events: none;
-    //   display: none;
-    // }
-    // #w_Graphic:hover::after {
-    //   display: block;
-    // }
-    // #w_Branding::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 150%;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   width: 100px;
-    //   height: 100px;
-    //   cursor: url("./img/brand.png");
-    //   background-size: cover;
-    //   z-index: 100;
-    //   pointer-events: none;
-    //   display: none;
-    // }
-    // #w_Branding:hover::after {
-    //   display: block;
-    // }
-    // #w_Edit::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 150%;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   width: 100px;
-    //   height: 100px;
-    //   cursor: url("./img/edit.png");
-    //   background-size: cover;
-    //   z-index: 100;
-    //   pointer-events: none;
-    //   display: none;
-    // }
-    // #w_Edit:hover::after {
-    //   display: block;
-    // }
-    // #w_Media::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 150%;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   width: 100px;
-    //   height: 100px;
-    //   cursor: url("./img/media.png");
-    //   background-size: cover;
-    //   z-index: 100;
-    //   pointer-events: none;
-    //   display: none;
-    // }
-    // #w_Media:hover::after {
-    //   display: block;
-    // }
-    // #w_Web::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 150%;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   width: 100px;
-    //   height: 100px;
-    //   cursor: url("./img/uxui.png");
-    //   background-size: cover;
-    //   z-index: 100;
-    //   pointer-events: none;
-    //   display: none;
-    // }
-    // #w_Web:hover::after {
-    //   display: block;
-    // }
     li {
-      padding: 20px 20px;
+      padding: 40px 20px;
       background-position: center;
       opacity: 0.5;
       border-bottom: 1px dashed $primary;
@@ -266,10 +170,13 @@
         border-top: 1px solid $primary;
         border-bottom: 1px solid $primary;
       }
+      a {
+        pointer-events: none;
+      }
     }
     .list-divider {
-      font-size: 2.5rem;
-      padding: 10px 20px;
+      font-size: 2rem;
+      padding: 20px;
       background: #242424;
       text-align: right;
       border: none;
@@ -278,20 +185,30 @@
         opacity: 0.5;
         border: none;
       }
+      &:first-child li {
+        margin-top: 20px;
+      }
       #w_Web {
         border-bottom: 2px solid $primary;
       }
     }
     #w_Media {
       border-bottom: none;
+      &:hover {
+        border-bottom: 1px solid $primary;
+      }
     }
     #w_Web {
       border: none;
+      &:hover {
+        border-top: 1px solid $primary;
+        border-bottom: 1px solid $primary;
+      }
     }
   }
 }
 .contact .preview {
-  width: 150px;
+  width: auto;
   height: auto;
   left: 50%;
   top: 50%;
@@ -300,6 +217,7 @@
   text-align: center;
   margin-top: 50px;
   #contact_to_me {
+    width: 150px;
     display: flex;
     align-items: center;
     font-size: 1em;
@@ -371,7 +289,6 @@
       position: absolute;
       top: 0;
       right: 0;
-      display: none;
       flex-direction: column;
       width: 40%;
       background: #ededed;
@@ -416,6 +333,7 @@
     padding: 30px 0;
     grid-template-areas: "number center toggle" "number center toggle" "preview preview preview";
     .number {
+      padding-left: 15%;
       min-width: 110px;
       h1 {
         font-size: 4rem;
@@ -432,7 +350,11 @@
     }
     .toggle {
       min-width: 70px;
+      padding-right: 15%;
     }
+  }
+  .about .preview {
+    padding: 0 5%;
   }
   .work .preview {
     font: 300 3em/1 "roslindale";
@@ -455,5 +377,8 @@
         text-align: right;
       }
     }
+  }
+  .contact .preview {
+    padding-left: 48%;
   }
 }

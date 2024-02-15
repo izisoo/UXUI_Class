@@ -1,6 +1,14 @@
+@import url("https://fonts.cdnfonts.com/css/roslindale?styles=147507,147527,147520,147523,147502,147510,147536,147549");
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 /*=== var ===*/
 /*=== reset ===*/
-@import url("https://fonts.cdnfonts.com/css/roslindale?styles=147507,147527,147520,147523,147502,147510,147536,147549");
 * {
   margin: 0;
   padding: 0;
@@ -56,16 +64,33 @@ body {
   height: 100%;
 }
 
+#custom-cursor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  cursor: auto;
+}
+#custom-cursor img {
+  width: 300px;
+  height: auto;
+  transform-origin: top left;
+}
+
+.cursor-shadow {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 .wrap {
   width: 100%;
   height: 100%;
-  background: #070b16;
+  background: url("./img/about-bg.png") center/cover no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .header {
@@ -79,6 +104,7 @@ body {
   justify-content: center;
   background-blend-mode: multiply;
   z-index: 1;
+  font: 300 25px/1 "roslindale";
 }
 .header #header {
   opacity: 1;
@@ -93,17 +119,8 @@ body {
   letter-spacing: 2px;
   color: #ededed;
 }
-.header #header .header_ul li {
-  font: 300 25px/1 "roslindale";
-}
 .header #header .header_ul .header_gnb a {
   margin-left: 20px;
-}
-.header #header .header_ul .header_toggle {
-  display: none;
-}
-.header #header .header_ul .header_gnb_mo {
-  display: none;
 }
 
 .header_toggle {
@@ -115,60 +132,27 @@ body {
 }
 
 .footer {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  position: fixed;
-  left: 0%;
-  bottom: 15%;
+  width: 100%;
+  height: 80px;
+  z-index: 9999;
   display: flex;
   justify-content: center;
-  align-items: center;
-  z-index: 1000;
 }
-.footer .text {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+.footer .footer {
   height: 100%;
-  color: #ff4d00;
-  animation: rotateText 10s linear infinite;
-  letter-spacing: 1px;
+  background: url("./img/1x/circle.png") center/cover no-repeat;
 }
-.footer .text .logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 95px;
-  height: 95px;
-  background: transparent;
-  border: 2px dashed #ededed;
-  border-radius: 50%;
-  opacity: 0.5;
+.footer .footer #footer .logo {
+  width: 100%;
+  height: 80%;
 }
-.footer .text p {
-  transform-origin: 0 75px;
-}
-.footer .text p text {
-  display: inline-block;
-}
-.footer span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font: 20px/1 "roslindale";
-}
-@keyframes rotateText {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+.footer .footer #footer .logo a {
+  text-align: center;
+  background: #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 article {
@@ -180,35 +164,35 @@ article {
   margin-top: 150px;
 }
 article h1 {
+  color: #ff4d00;
   font-size: 4rem;
   text-align: left;
   margin-bottom: 30px;
 }
 article .sub_title h4 {
   margin-top: 40px;
-  opacity: 0.7;
   font-size: 2em;
 }
 article .sub_title p {
   width: 60%;
+  opacity: 0.7;
   margin-top: 10px;
 }
 
 .careers {
-  width: 80%;
+  width: 100%;
   height: auto;
   background: transparent;
-  margin: 0px auto;
   margin-top: 20px;
   position: relative;
   overflow-y: hidden;
 }
 .careers .graphic {
-  width: 100%;
+  width: 350px;
   height: 700px;
   background: transparent;
-  overflow: hidden;
-  position: relative;
+  position: absolute;
+  right: 9%;
 }
 .careers .graphic .ellipse {
   display: none;
@@ -220,8 +204,6 @@ article .sub_title p {
   border-radius: 100%;
   background-origin: border-box;
   background-clip: content-box, border-box;
-  position: absolute;
-  right: 10%;
 }
 .careers .graphic .ellipse.show {
   display: block;
@@ -243,18 +225,18 @@ article .sub_title p {
   background-image: linear-gradient(#070b16, #070b16), linear-gradient(70deg, #070b16 65%, #353535 73%, #ff4d00 85%);
 }
 .careers .career {
-  width: 50%;
-  height: auto;
+  width: 80%;
+  height: 450px;
   z-index: 10;
-  position: absolute;
-  top: 15%;
-  right: 20%;
-  overflow: hidden;
+  position: relative;
+  padding-left: 40%;
+  margin: 0px auto;
 }
 .careers .career .company {
+  width: 90%;
   display: none;
   transition: opacity 0.5s;
-  margin-bottom: 50px;
+  margin-top: 100px;
   overflow: hidden;
 }
 .careers .career .company.show {
@@ -282,6 +264,9 @@ article .sub_title p {
 .careers .career .company div p {
   text-align: left;
 }
+.careers .career:hover {
+  cursor: url("./img/move.png"), auto;
+}
 
 @media screen and (max-width: 1200px) {
   article .sub_title p {
@@ -291,27 +276,79 @@ article .sub_title p {
     margin-top: 50px;
     overflow-y: hidden;
   }
+  .careers .graphic {
+    right: 0%;
+  }
   .careers .graphic .ellipse {
     width: 250px;
     height: 70%;
-    right: 10%;
   }
   .careers .career {
-    width: 60%;
-    right: 30%;
+    width: 100%;
+    padding-left: 30%;
+  }
+  .careers .career .company {
+    width: 75%;
+    margin-top: 70px;
   }
   .careers .career .company div h4 {
     white-space: wrap;
   }
 }
 @media screen and (max-width: 768px) {
+  .header #header {
+    width: 85%;
+  }
+  .header .header_gnb {
+    display: none;
+  }
+  .header .header_toggle {
+    display: block !important;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .header .header_toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #ededed;
+  }
+  .header .header_toggle span:nth-child(2) {
+    margin: 8px 0;
+  }
+  .header .header_gnb_mo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    background: #ededed;
+    padding: 70px 0 600px;
+  }
+  .header .header_gnb_mo a {
+    color: #242424;
+    padding: 20px;
+    display: block;
+    font-weight: bold;
+  }
+  .careers .graphic {
+    right: 0;
+  }
   .careers .graphic .ellipse {
     width: 250px;
-    right: 10%;
   }
   .careers .career {
-    width: 80%;
-    left: 0;
+    width: 100%;
+    padding-left: 10%;
     height: auto;
+  }
+  .careers .career .company {
+    width: 75%;
   }
 }/*# sourceMappingURL=about.css.map */

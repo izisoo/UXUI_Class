@@ -1,6 +1,14 @@
+@import url("https://fonts.cdnfonts.com/css/roslindale?styles=147507,147527,147520,147523,147502,147510,147536,147549");
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 /*=== var ===*/
 /*=== reset ===*/
-@import url("https://fonts.cdnfonts.com/css/roslindale?styles=147507,147527,147520,147523,147502,147510,147536,147549");
 * {
   margin: 0;
   padding: 0;
@@ -56,10 +64,27 @@ body {
   height: 100%;
 }
 
+#custom-cursor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  cursor: auto;
+}
+#custom-cursor img {
+  width: 300px;
+  height: auto;
+  transform-origin: top left;
+}
+
+.cursor-shadow {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 .wrap {
   width: 100%;
   height: 100%;
   background: #070b16;
+  overflow: hidden;
 }
 
 .header {
@@ -73,6 +98,7 @@ body {
   justify-content: center;
   background-blend-mode: multiply;
   z-index: 1;
+  font: 300 25px/1 "roslindale";
 }
 .header #header {
   opacity: 1;
@@ -87,17 +113,8 @@ body {
   letter-spacing: 2px;
   color: #ededed;
 }
-.header #header .header_ul li {
-  font: 300 25px/1 "roslindale";
-}
 .header #header .header_ul .header_gnb a {
   margin-left: 20px;
-}
-.header #header .header_ul .header_toggle {
-  display: none;
-}
-.header #header .header_ul .header_gnb_mo {
-  display: none;
 }
 
 .header_toggle {
@@ -156,9 +173,13 @@ body {
   grid-template-areas: "number center toggle" "number center toggle" ". preview preview";
   justify-content: space-between;
   align-items: center;
-  padding: 30px 5%;
+  padding: 40px 5%;
   gap: 2%;
   border-top: 1px solid #ededed;
+}
+.section:last-child {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 50px;
 }
 .section .number {
   min-width: 125px;
@@ -207,7 +228,6 @@ body {
 .about .preview {
   width: 100%;
   max-height: 400px;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 .about .preview h3 {
@@ -243,11 +263,8 @@ body {
   letter-spacing: 2px;
   margin-right: 15%;
 }
-.work .preview ul #w_Graphic {
-  cursor: url("./img/graphic.png") 80 80, auto;
-}
 .work .preview ul li {
-  padding: 20px 20px;
+  padding: 40px 20px;
   background-position: center;
   opacity: 0.5;
   border-bottom: 1px dashed #ededed;
@@ -258,9 +275,12 @@ body {
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 }
+.work .preview ul li a {
+  pointer-events: none;
+}
 .work .preview ul .list-divider {
-  font-size: 2.5rem;
-  padding: 10px 20px;
+  font-size: 2rem;
+  padding: 20px;
   background: #242424;
   text-align: right;
   border: none;
@@ -270,18 +290,28 @@ body {
   opacity: 0.5;
   border: none;
 }
+.work .preview ul .list-divider:first-child li {
+  margin-top: 20px;
+}
 .work .preview ul .list-divider #w_Web {
   border-bottom: 2px solid #ededed;
 }
 .work .preview ul #w_Media {
   border-bottom: none;
 }
+.work .preview ul #w_Media:hover {
+  border-bottom: 1px solid #ededed;
+}
 .work .preview ul #w_Web {
   border: none;
 }
+.work .preview ul #w_Web:hover {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
 
 .contact .preview {
-  width: 150px;
+  width: auto;
   height: auto;
   left: 50%;
   top: 50%;
@@ -291,6 +321,7 @@ body {
   margin-top: 50px;
 }
 .contact .preview #contact_to_me {
+  width: 150px;
   display: flex;
   align-items: center;
   font-size: 1em;
@@ -308,60 +339,27 @@ body {
 }
 
 .footer {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  position: fixed;
-  left: 0%;
-  bottom: 15%;
+  width: 100%;
+  height: 80px;
+  z-index: 9999;
   display: flex;
   justify-content: center;
-  align-items: center;
-  z-index: 1000;
 }
-.footer .text {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+.footer .footer {
   height: 100%;
-  color: #ff4d00;
-  animation: rotateText 10s linear infinite;
-  letter-spacing: 1px;
+  background: url("./img/1x/circle.png") center/cover no-repeat;
 }
-.footer .text .logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 95px;
-  height: 95px;
-  background: transparent;
-  border: 2px dashed #ededed;
-  border-radius: 50%;
-  opacity: 0.5;
+.footer .footer #footer .logo {
+  width: 100%;
+  height: 80%;
 }
-.footer .text p {
-  transform-origin: 0 75px;
-}
-.footer .text p text {
-  display: inline-block;
-}
-.footer span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font: 20px/1 "roslindale";
-}
-@keyframes rotateText {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+.footer .footer #footer .logo a {
+  text-align: center;
+  background: #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -409,7 +407,6 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    display: none;
     flex-direction: column;
     width: 40%;
     background: #ededed;
@@ -449,6 +446,7 @@ body {
     grid-template-areas: "number center toggle" "number center toggle" "preview preview preview";
   }
   .section .number {
+    padding-left: 15%;
     min-width: 110px;
   }
   .section .number h1 {
@@ -465,6 +463,10 @@ body {
   }
   .section .toggle {
     min-width: 70px;
+    padding-right: 15%;
+  }
+  .about .preview {
+    padding: 0 5%;
   }
   .work .preview {
     font: 300 3em/1 "roslindale";
@@ -485,5 +487,8 @@ body {
     padding: 10px 40px;
     background: #242424;
     text-align: right;
+  }
+  .contact .preview {
+    padding-left: 48%;
   }
 }/*# sourceMappingURL=desktop.css.map */

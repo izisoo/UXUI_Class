@@ -3,16 +3,17 @@
 .wrap {
   width: 100%;
   height: 100%;
-  background: $background;
+  background: url("./img/about-bg.png") center/cover no-repeat;
   object-fit: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .header {
-  @include header;
+  @include header();
 }
 .header_toggle {
   display: none;
@@ -21,7 +22,7 @@
   display: none;
 }
 .footer {
-  @include footer;
+  @include footer();
 }
 
 //article
@@ -34,6 +35,7 @@ article {
   margin-top: 150px;
   // border: 1px solid red;
   h1 {
+    color: $accent;
     font-size: 4rem;
     text-align: left;
     margin-bottom: 30px;
@@ -41,11 +43,11 @@ article {
   .sub_title {
     h4 {
       margin-top: 40px;
-      opacity: 0.7;
       font-size: 2em;
     }
     p {
       width: 60%;
+      opacity: 0.7;
       margin-top: 10px;
     }
   }
@@ -53,20 +55,20 @@ article {
 
 //careers
 .careers {
-  width: 80%;
+  width: 100%;
   height: auto;
   background: transparent;
-  margin: 0px auto;
   margin-top: 20px;
   position: relative;
   overflow-y: hidden;
+  // border: 1px solid red;
   .graphic {
-    width: 100%;
+    width: 350px;
     height: 700px;
     background: transparent;
-    overflow: hidden;
     // border: 1px solid red;
-    position: relative;
+    position: absolute;
+    right: 9%;
     .ellipse {
       display: none;
       transition: opacity 0.5s;
@@ -77,8 +79,6 @@ article {
       border-radius: 100%;
       background-origin: border-box;
       background-clip: content-box, border-box;
-      position: absolute;
-      right: 10%;
       &.show {
         display: block;
         opacity: 1;
@@ -106,18 +106,19 @@ article {
     }
   }
   .career {
-    width: 50%;
-    height: auto;
-    // border: 1px solid red;
+    width: 80%;
+    height: 450px;
     z-index: 10;
-    position: absolute;
-    top: 15%;
-    right: 20%;
-    overflow: hidden;
+    position: relative;
+    padding-left: 40%;
+    margin: 0px auto;
+    // border: 1px solid red;
     .company {
+      width: 90%;
+      // border: 1px solid red;
       display: none;
       transition: opacity 0.5s;
-      margin-bottom: 50px;
+      margin-top: 100px;
       overflow: hidden;
       &.show {
         display: block;
@@ -145,6 +146,9 @@ article {
         }
       }
     }
+    &:hover {
+      cursor: url("./img/move.png"), auto;
+    }
   }
 }
 
@@ -163,16 +167,18 @@ article {
     margin-top: 50px;
     overflow-y: hidden;
     .graphic {
+      right: 0%;
       .ellipse {
         width: 250px;
         height: 70%;
-        right: 10%;
       }
     }
     .career {
-      width: 60%;
-      right: 30%;
+      width: 100%;
+      padding-left: 30%;
       .company {
+        width: 75%;
+        margin-top: 70px;
         div {
           h4 {
             white-space: wrap;
@@ -185,17 +191,64 @@ article {
 
 // mobile
 @media screen and (max-width: 768px) {
+  .header {
+    #header {
+      width: 85%;
+    }
+    .header_gnb {
+      display: none;
+    }
+    .header_toggle {
+      display: block !important;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      background: transparent;
+      border: none;
+      justify-content: space-between;
+      cursor: pointer;
+      span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: $primary;
+      }
+      span:nth-child(2) {
+        margin: 8px 0;
+      }
+    }
+    .header_gnb_mo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+      flex-direction: column;
+      width: 40%;
+      background: #ededed;
+      padding: 70px 0 600px;
+      a {
+        color: #242424;
+        padding: 20px;
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+
   .careers {
     .graphic {
+      right: 0;
       .ellipse {
         width: 250px;
-        right: 10%;
       }
     }
     .career {
-      width: 80%;
-      left: 0;
+      width: 100%;
+      padding-left: 10%;
       height: auto;
+      .company {
+        width: 75%;
+      }
     }
   }
 }
