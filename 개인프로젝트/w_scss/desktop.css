@@ -44,7 +44,7 @@ a {
   letter-spacing: 2px;
 }
 * h5 {
-  font-family: "SUIT-Regular";
+  font: lighter 1rem/1 "SUIT-Regular";
 }
 
 body {
@@ -201,18 +201,40 @@ body {
 .section .preview {
   grid-area: preview;
   margin-top: 20px;
+  display: none;
 }
 
 .about .preview {
-  opacity: 0.8;
   width: 100%;
-  max-height: 300px;
+  max-height: 400px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.about .preview h3 {
+  opacity: 0.85;
+}
 .about .preview #article {
+  opacity: 0.7;
   margin-top: 10px;
   color: #ededed;
+}
+.about .preview #go-about {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: 1px solid #ededed;
+  border-radius: 50px;
+  opacity: 0.6;
+  margin: 30px 0 10px;
+}
+.about .preview #go-about:hover {
+  background: transparent;
+  opacity: 1;
+  border: 1px solid #ff4d00;
+  color: #ff4d00;
+  font-weight: bold;
 }
 
 .work .preview {
@@ -221,21 +243,68 @@ body {
   letter-spacing: 2px;
   margin-right: 15%;
 }
+.work .preview ul #w_Graphic {
+  cursor: url("./img/graphic.png") 80 80, auto;
+}
 .work .preview ul li {
   padding: 20px 20px;
   background-position: center;
-  border-top: 1px solid #ededed;
   opacity: 0.5;
+  border-bottom: 1px dashed #ededed;
 }
 .work .preview ul li:hover {
+  color: #ff4d00;
   opacity: 1;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
 }
 .work .preview ul .list-divider {
-  border-top: 1px solid #ededed;
   font-size: 2.5rem;
   padding: 10px 20px;
   background: #242424;
   text-align: right;
+  border: none;
+}
+.work .preview ul .list-divider:hover {
+  color: #ededed;
+  opacity: 0.5;
+  border: none;
+}
+.work .preview ul .list-divider #w_Web {
+  border-bottom: 2px solid #ededed;
+}
+.work .preview ul #w_Media {
+  border-bottom: none;
+}
+.work .preview ul #w_Web {
+  border: none;
+}
+
+.contact .preview {
+  width: 150px;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, 0%);
+  background: transparent;
+  text-align: center;
+  margin-top: 50px;
+}
+.contact .preview #contact_to_me {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: 1px solid #ededed;
+  border-radius: 50px;
+  opacity: 0.6;
+}
+.contact .preview #contact_to_me:hover {
+  background: transparent;
+  opacity: 1;
+  border: 1px solid #ff4d00;
+  color: #ff4d00;
+  font-weight: bold;
 }
 
 .footer {
@@ -244,10 +313,11 @@ body {
   border-radius: 50%;
   position: fixed;
   left: 0%;
-  bottom: 5%;
+  bottom: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 .footer .text {
   position: absolute;
@@ -263,16 +333,27 @@ body {
 .footer .text .logo {
   position: absolute;
   left: 50%;
-  width: 80px;
-  height: 80px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 95px;
+  height: 95px;
+  background: transparent;
+  border: 2px dashed #ededed;
   border-radius: 50%;
   opacity: 0.5;
 }
-.footer .text span {
-  position: absolute;
-  left: 50%;
-  font-size: 1rem;
+.footer .text p {
   transform-origin: 0 75px;
+}
+.footer .text p text {
+  display: inline-block;
+}
+.footer span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 20px/1 "roslindale";
 }
 @keyframes rotateText {
   0% {

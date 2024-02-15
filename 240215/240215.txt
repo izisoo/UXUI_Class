@@ -1,0 +1,130 @@
+1. 변수
+2. 자료형 (태/식)
+3. 자료형 변환 = 형변환
+
+4. 연산자**
+-산술
+-연결
+-할당
+-비교
+-논리
+(*삼항조건연산자)
+
+5. 제어문
+
+- 조건문
+> if문
+> if..else 문 (*else if)
+> switch 문
+
+- 반복문
+> for 문
+> forEach 문
+> for..in 문
+> for...of 문
+> while 문
+> do...while문
+(*break문 & continue문)
+
+오픈그래프 : 다른 누군가에게 url 공유!
+대표이미지 / 설명
+
+
+
+작동하지 않는 이유가 뭐야?
+[html]
+            <ul class="design">
+              <li class="list-divider" data-role="list-divider">Design</li>
+              <li class="worklist" id="w_Graphic">
+                <a href="#">Graphic</a>
+              </li>
+              <li class="worklist" id="w_Branding">
+                <a href="#">Branding</a>
+              </li>
+              <li class="worklist" id="w_Edit">
+                <a href="#">Editorial Design</a>
+              </li>
+              <li class="worklist" id="w_Media">
+                <a href="#">Media Design</a>
+              </li>
+            </ul>
+            <ul class="FE">
+              <li class="list-divider" data-role="list-divider">FE
+                <li class="worklist" id="w_Web">
+                  <a href="#">Web</a>
+                </li>
+              </li>
+            </ul>
+
+[scss]
+#custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  display: none;
+  img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: translate(50%, 50%) rotate(-45deg);
+  }
+}
+
+[js]
+document.addEventListener("mousemove", function (e) {
+  let cursor = document.getElementById("custom-cursor");
+  cursor.style.display = "block";
+
+  cursor.style.left = e.pageX + "px";
+  cursor.style.top = e.pageY + "px";
+
+  let element = document.elementFromPoint(e.clientX, e.clientY);
+  let id = element.id;
+
+  switch (id) {
+    case "w_Graphic":
+      cursor.querySelector("img").src = "./img/graphic.png";
+      break;
+    case "w_Branding":
+      cursor.querySelector("img").src = "./img/brand.png";
+      break;
+    case "w_Edit":
+      cursor.querySelector("img").src = "./img/edit.png";
+      break;
+    case "w_Media":
+      cursor.querySelector("img").src = "./img/media.png";
+      break;
+    case "w_Web":
+      cursor.querySelector("img").src = "./img/uxui.png";
+      break;
+    default:
+      cursor.style.display = "none";
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

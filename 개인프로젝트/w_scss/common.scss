@@ -49,6 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
   .text {
     position: absolute;
     left: 50%;
@@ -62,19 +63,30 @@
     .logo {
       position: absolute;
       left: 50%;
-      width: 80px;
-      height: 80px;
-      // background: $primary;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 95px;
+      height: 95px;
+      background: transparent;
+      border: 2px dashed $primary;
       border-radius: 50%;
       opacity: 0.5;
     }
-    span {
-      position: absolute;
-      left: 50%;
-      font-size: 1rem;
+    p {
       transform-origin: 0 75px;
+      text {
+        display: inline-block;
+      }
     }
   }
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 20px/1 "roslindale";
+  }
+
   @keyframes rotateText {
     0% {
       transform: rotate(360deg);
@@ -136,7 +148,7 @@ a {
     letter-spacing: 2px;
   }
   h5 {
-    font-family: "SUIT-Regular";
+    font: lighter 1rem/1 "SUIT-Regular";
   }
 }
 

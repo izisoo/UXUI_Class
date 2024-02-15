@@ -44,7 +44,7 @@ a {
   letter-spacing: 2px;
 }
 * h5 {
-  font-family: "SUIT-Regular";
+  font: lighter 1rem/1 "SUIT-Regular";
 }
 
 body {
@@ -106,6 +106,14 @@ body {
   display: none;
 }
 
+.header_toggle {
+  display: none;
+}
+
+.header_gnb_mo {
+  display: none;
+}
+
 .footer {
   width: 150px;
   height: 150px;
@@ -116,6 +124,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 .footer .text {
   position: absolute;
@@ -131,16 +140,27 @@ body {
 .footer .text .logo {
   position: absolute;
   left: 50%;
-  width: 80px;
-  height: 80px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 95px;
+  height: 95px;
+  background: transparent;
+  border: 2px dashed #ededed;
   border-radius: 50%;
   opacity: 0.5;
 }
-.footer .text span {
-  position: absolute;
-  left: 50%;
-  font-size: 1rem;
+.footer .text p {
   transform-origin: 0 75px;
+}
+.footer .text p text {
+  display: inline-block;
+}
+.footer span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 20px/1 "roslindale";
 }
 @keyframes rotateText {
   0% {
@@ -165,7 +185,7 @@ article h1 {
   margin-bottom: 30px;
 }
 article .sub_title h4 {
-  margin-top: 20px;
+  margin-top: 40px;
   opacity: 0.7;
   font-size: 2em;
 }
@@ -287,7 +307,7 @@ article .sub_title p {
 @media screen and (max-width: 768px) {
   .careers .graphic .ellipse {
     width: 250px;
-    right: 14%;
+    right: 10%;
   }
   .careers .career {
     width: 80%;

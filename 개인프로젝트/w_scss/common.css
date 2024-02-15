@@ -44,7 +44,7 @@ a {
   letter-spacing: 2px;
 }
 * h5 {
-  font-family: "SUIT-Regular";
+  font: lighter 1rem/1 "SUIT-Regular";
 }
 
 body {

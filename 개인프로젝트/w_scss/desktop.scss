@@ -112,42 +112,207 @@
   .preview {
     grid-area: preview;
     margin-top: 20px;
+    display: none;
     // border: 1px solid red;
   }
 }
 
 .about .preview {
-  opacity: 0.8;
   width: 100%;
-  max-height: 300px;
+  max-height: 400px;
   overflow: hidden;
   text-overflow: ellipsis;
+  h3 {
+    opacity: 0.85;
+  }
   #article {
+    opacity: 0.7;
     margin-top: 10px;
     color: $primary;
   }
+  #go-about {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 1px solid #ededed;
+    border-radius: 50px;
+    opacity: 0.6;
+    margin: 30px 0 10px;
+    &:hover {
+      background: transparent;
+      opacity: 1;
+      border: 1px solid #ff4d00;
+      color: #ff4d00;
+      font-weight: bold;
+    }
+  }
 }
+// #custom-cursor {
+//   position: fixed;
+//   pointer-events: none;
+//   z-index: 1000;
+//   display: none;
+//   img {
+//     position: absolute;
+//     width: 100px;
+//     height: 100px;
+//     transform: translate(50%, 50%) rotate(-45deg);
+//   }
+// }
 .work .preview {
   color: $primary;
   font: 300 3em/1 "roslindale";
   letter-spacing: 2px;
   margin-right: 15%;
   ul {
+    #w_Graphic {
+      cursor: url("./img/graphic.png") 80 80, auto;
+    }
+    // #w_Graphic::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   width: 100px;
+    //   height: 100px;
+    //   background-image: url("./img/graphic.png");
+    //   background-size: cover;
+    //   z-index: 100;
+    //   pointer-events: none;
+    //   display: none;
+    // }
+    // #w_Graphic:hover::after {
+    //   display: block;
+    // }
+    // #w_Branding::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 150%;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   width: 100px;
+    //   height: 100px;
+    //   cursor: url("./img/brand.png");
+    //   background-size: cover;
+    //   z-index: 100;
+    //   pointer-events: none;
+    //   display: none;
+    // }
+    // #w_Branding:hover::after {
+    //   display: block;
+    // }
+    // #w_Edit::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 150%;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   width: 100px;
+    //   height: 100px;
+    //   cursor: url("./img/edit.png");
+    //   background-size: cover;
+    //   z-index: 100;
+    //   pointer-events: none;
+    //   display: none;
+    // }
+    // #w_Edit:hover::after {
+    //   display: block;
+    // }
+    // #w_Media::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 150%;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   width: 100px;
+    //   height: 100px;
+    //   cursor: url("./img/media.png");
+    //   background-size: cover;
+    //   z-index: 100;
+    //   pointer-events: none;
+    //   display: none;
+    // }
+    // #w_Media:hover::after {
+    //   display: block;
+    // }
+    // #w_Web::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 150%;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   width: 100px;
+    //   height: 100px;
+    //   cursor: url("./img/uxui.png");
+    //   background-size: cover;
+    //   z-index: 100;
+    //   pointer-events: none;
+    //   display: none;
+    // }
+    // #w_Web:hover::after {
+    //   display: block;
+    // }
     li {
       padding: 20px 20px;
       background-position: center;
-      border-top: 1px solid $primary;
       opacity: 0.5;
+      border-bottom: 1px dashed $primary;
       &:hover {
+        color: $accent;
         opacity: 1;
+        border-top: 1px solid $primary;
+        border-bottom: 1px solid $primary;
       }
     }
     .list-divider {
-      border-top: 1px solid $primary;
       font-size: 2.5rem;
       padding: 10px 20px;
       background: #242424;
       text-align: right;
+      border: none;
+      &:hover {
+        color: $primary;
+        opacity: 0.5;
+        border: none;
+      }
+      #w_Web {
+        border-bottom: 2px solid $primary;
+      }
+    }
+    #w_Media {
+      border-bottom: none;
+    }
+    #w_Web {
+      border: none;
+    }
+  }
+}
+.contact .preview {
+  width: 150px;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, 0%);
+  background: transparent;
+  text-align: center;
+  margin-top: 50px;
+  #contact_to_me {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 1px solid #ededed;
+    border-radius: 50px;
+    opacity: 0.6;
+    &:hover {
+      background: transparent;
+      opacity: 1;
+      border: 1px solid #ff4d00;
+      color: #ff4d00;
+      font-weight: bold;
     }
   }
 }
