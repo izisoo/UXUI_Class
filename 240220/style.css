@@ -1,0 +1,36 @@
+@import url("./reset.css");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+#Profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+#desc {
+  margin: 10px;
+}
+
+p {
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+.clicked {
+  background: #975;
+  color: #fff;
+}
