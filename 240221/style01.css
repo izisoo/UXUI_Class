@@ -1,0 +1,50 @@
+@import url("./reset.css");
+
+#container {
+  width: 600px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 1.5 rem;
+  line-height: 1.8;
+}
+
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+#top li {
+  margin: 10px 0;
+}
+#top li b {
+  width: 70px;
+  display: inline-block;
+}
+#btn {
+  margin-top: 20px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+h2 {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+p {
+  line-height: 2;
+  font-size: 0.8rem;
+}
+
+.clicked {
+  display: none;
+}

@@ -1,0 +1,31 @@
+@import url("./reset.css");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  text-align: center;
+}
+form input[type="number"] {
+  text-align: center;
+  padding: 6px 0;
+}
+form input[type="number"]:focus {
+  outline: none;
+}
+form input[type='submit'] {
+  width: 100%;
+  padding: 6px 0;
+}
+.result {
+  color: crimson;
+  font-weight: bold;
+}
