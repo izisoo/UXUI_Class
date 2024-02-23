@@ -1,0 +1,65 @@
+@import url("./reset.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.sns {
+  background: #f8f8f8;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.sns a {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #fff;
+  border-radius: 100%;
+  display: inline-block;
+  text-align: center;
+  line-height: 70px;
+  margin: 0 10px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.sns a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  transition: all 0.5s;
+}
+.sns a:hover::before {
+  height: 100%;
+}
+.sns a:nth-child(1)::before {
+  background: #3b5999;
+}
+.sns a:nth-child(2)::before {
+  background: #55acee;
+}
+.sns a:nth-child(3)::before {
+  background: #dd4b39;
+}
+.sns a:nth-child(4)::before {
+  background: #0077b5;
+}
+.sns a:nth-child(5)::before {
+  background: #e4405f;
+}
+.sns a .fa-brands {
+  position: relative;
+  transition: all 0.3s;
+}
+.sns a .fa-brands:hover {
+  color: #fff;
+}
+
+.active {
+  transform: rotateY(360deg);
+}

@@ -1,1 +1,36 @@
-@import "/common.css";/*# sourceMappingURL=Mypage.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrap {
+    width: 100%;
+  }
+  .wrap .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 100%;
+    min-width: 390px;
+  }
+  .wrap .container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Mypage.css.map */

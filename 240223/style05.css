@@ -1,0 +1,62 @@
+@import url("./reset.css");
+
+#container {
+  margin: 50px auto;
+  padding: 10px 20px;
+  width: 600px;
+}
+#bookInfo {
+  margin-top: 40px;
+}
+#bookInfo li {
+  font-size: 1rem;
+  line-height: 3;
+}
+#bookInfo label {
+  display: inline-block;
+  width: 50px;
+}
+#bookInfo input[type = "text"] {
+  width: 450px;
+  padding: 5px;
+  border: none;
+}
+#bookInfo input[type = "text"]:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+#container .btn {
+  width: 150px;
+  margin: 20px 55px;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.submit {
+  width: 150px;
+  margin: 20px 55px;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#bookList {
+  width: 500px;
+  margin-top: 80px;
+}
+#bookList li { 
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+#bookList li span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
