@@ -1,15 +1,20 @@
 @import "../common.scss";
 
 //==========PC==========//
-body {
+.wrap {
   width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+  #container {
+    width: 75%;
+    border: 1px solid red;
+  }
 }
 
 //==========Tablet==========//
 @media screen and (max-width: 1200px) {
   .wrap {
-    width: 100%;
-    .container {
+    #container {
       width: 100%;
     }
   }
@@ -18,10 +23,8 @@ body {
 //==========Mobile==========//
 @media screen and (max-width: 768px) {
   .wrap {
-    width: 100%;
     min-width: 390px;
-    .container {
-      width: 100%;
+    #container {
     }
   }
 }
