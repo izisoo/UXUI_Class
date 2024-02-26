@@ -4,56 +4,72 @@
 .wrap {
   width: 100%;
   height: 100%;
-  border: 1px solid red;
   #container {
-    width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .product_list {
-      width: 100%;
-      border: 3px solid green;
+      width: 1200px;
       display: grid;
-      grid-template-columns: repeat(3, 400px);
+      grid-template-columns: repeat(3, 33.33%);
       gap: 0;
-      justify-content: center;
-      align-items: center;
       .product {
-        .producimg {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .productimg {
+          width: 100%;
           height: 400px;
-          margin-bottom: 32px;
-          border: 1px solid green;
           position: relative;
           img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-          }
-          .shop_product_thumbnail {
-            opacity: 1;
+            height: 100%;
             transition: all 0.3s;
+            position: relative;
+          }
+          .shop_product_thumbnail_hover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
             &:hover {
-              opacity: 0;
-            }
-            .shop_product_thumbnail_hover {
-              position: absolute;
-              left: 0;
-              top: -400px;
-              opacity: 0;
+              opacity: 1;
             }
           }
         }
-      }
-      .product_info {
-        text-align: center;
-        margin: 17px;
-        h3 {
-          margin-bottom: 17px;
-        }
-        h4 {
-          margin-bottom: 32px;
+        .product_info {
+          text-align: center;
+          margin: 17px;
+          position: relative;
+          h3 {
+            margin-bottom: 17px;
+            height: 55px;
+          }
+          .product_name {
+            height: 28px;
+            color: $Textcolor-gray;
+          }
+          .shop_product_price {
+            margin: 17px 0;
+            height: 33px;
+            .product_original_price {
+              color: $Textcolor-gray;
+              text-decoration: line-through;
+              margin-bottom: 5px;
+            }
+            .product_price {
+              font-family: "Futura PT";
+            }
+          }
         }
         .button_pc_nobg {
           width: 185px;
           height: 45px;
+          // position: absolute;
+          // bottom: 0;
+          // left: 0;
+          // transform: translate(-50% -50%);
           border: 1px solid $Textcolor-black;
           font: normal 14px/1 "Futura PT";
           background: none;
@@ -72,10 +88,24 @@
 @media screen and (max-width: 1200px) {
   .wrap {
     #container {
-      width: 100%;
       min-width: 768px;
       .product_list {
-        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        grid-template-columns: repeat(4, 25%);
+        .product {
+          width: 100%;
+          .productimg {
+            height: auto;
+            img {
+              width: 100%;
+              object-fit: cover;
+              object-position: center top;
+            }
+            .shop_product_thumbnail_hover {
+              display: none;
+            }
+          }
+        }
       }
     }
   }
@@ -87,16 +117,18 @@
     #container {
       min-width: 390px;
       .product_list {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 50%);
         .product {
           .product_info {
             margin-left: 0;
             margin-right: 0;
             h3 {
               padding: 10px;
+              font-size: 33px;
             }
             h4 {
-              padding: 10px;
+              padding: 10px 30px;
+              font-size: 30px;
             }
             .button_pc_nobg {
               font-size: 33px;
