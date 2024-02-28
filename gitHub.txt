@@ -1,0 +1,66 @@
+~깃허브 사용법~
+
+[git bash]
+
+> git init
+
+> git add .
+
+>* 레파스토리와 연결 : github : quick step 주소 복사 후 git remote add origin (ctrl+v)
+
+>* git remote -v => fetch/push 두 개가 나와야 정상
+
+> git status
+
+> git commit -m""
+
+> git push origin master
+
+
+*** git pull : 작업 중간 버전 모든 데이터를 다운받겠다
+*** git clone : 복사해서 그 위에서 작업하겟다
+
+> cd studyproject : 루트폴더 안에 새로운 폴더 추가
+
+> git checkout -b freshman : 브랜치 새로 생성
+
+> git checkout freshman : freshman으로 계정 전환
+
+> git push origin freshman
+
+
+==========================
+
+[ 팀프로젝트 할 때 ]
+
+> master(*최종단계) / develop(*취합공간) / feature(*개별작업공간)
+
+> git merge develop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

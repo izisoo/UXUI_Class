@@ -1,0 +1,7 @@
+나 & 컴퓨터 : 가위,바위,보
+
+localStorage
+
+React => JS 준수한 프로그래밍 코드 단계
+=> CRUD
+=> Create Read
